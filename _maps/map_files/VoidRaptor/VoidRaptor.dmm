@@ -1388,6 +1388,7 @@
 /area/station/hallway/primary/central)
 "atT" = (
 /obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter)
 "atW" = (
@@ -36982,7 +36983,6 @@
 /turf/open/floor/wood/large,
 /area/station/hallway/primary/central/fore)
 "kza" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible/layer4,
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/button/door/directional/south{
 	id = "engsm";
@@ -36990,6 +36990,7 @@
 	req_access = list("engineering")
 	},
 /obj/structure/cable,
+/obj/machinery/atmospherics/pipe/layer_manifold/general,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "kzc" = (
@@ -38325,9 +38326,6 @@
 	},
 /area/station/security/prison)
 "kPP" = (
-/obj/machinery/atmospherics/components/binary/pump{
-	name = "Chamber Inject"
-	},
 /obj/machinery/atmospherics/components/binary/pump{
 	name = "Chamber Inject";
 	piping_layer = 4;
@@ -46144,6 +46142,7 @@
 /area/station/command/teleporter)
 "mWQ" = (
 /obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "mWT" = (
@@ -49966,12 +49965,12 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/medical/morgue)
 "nYt" = (
-/obj/machinery/atmospherics/pipe/layer_manifold/general,
 /obj/machinery/meter,
 /obj/effect/turf_decal/stripes/line,
 /obj/item/radio/intercom/directional/south,
 /obj/structure/cable,
 /obj/machinery/light/cold/directional/south,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
 "nYI" = (
@@ -57867,6 +57866,7 @@
 /area/station/commons/dorms)
 "qcW" = (
 /obj/structure/sign/warning/electric_shock,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
 /turf/closed/wall/r_wall,
 /area/station/engineering/supermatter)
 "qda" = (
@@ -120442,7 +120442,7 @@ tTX
 aEI
 tHb
 aEI
-bZi
+tTX
 oRP
 wKi
 oCl
@@ -121719,7 +121719,7 @@ upn
 fHx
 hLh
 cju
-tTu
+tUK
 tAS
 tym
 qin
