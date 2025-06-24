@@ -79,7 +79,7 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	///Are we exploding?
 	var/final_countdown = FALSE
 	///A scaling value that affects the severity of explosions.
-	var/explosion_power = 35
+	var/explosion_power = 60
 	///Time in 1/10th of seconds since the last sent warning
 	var/lastwarning = 0
 
