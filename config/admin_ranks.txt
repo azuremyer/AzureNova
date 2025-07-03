@@ -66,7 +66,7 @@ Edit =
 
 Name = Game Master
 Include = EVERYTHING
-Exclude =
+Exclude = AUTOADMIN
 Edit = EVERYTHING
 
 Name = Lazy Master
