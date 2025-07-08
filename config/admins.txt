@@ -7,3 +7,4 @@
 MunkoMonkey = Host
 Kevin_Glitch = Game Master
 Wreckerlollol = Game Master
+Innocentbox = Game Admin
