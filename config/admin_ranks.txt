@@ -51,7 +51,7 @@ Edit =
 
 Name = Trial Admin
 Include = @ SPAWN VAREDIT BAN
-Exclude =
+Exclude = AUTOADMIN
 Edit =
 
 Name = Badmin
