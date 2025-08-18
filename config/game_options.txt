@@ -176,7 +176,7 @@ ALLOW_AI_MULTICAM
 ## AWAY MISSIONS ###
 
 ## Uncomment to load one of the missions from awaymissionconfig.txt or away_missions/ at roundstart.
-#ROUNDSTART_AWAY
+ROUNDSTART_AWAY
 
 ## How long the delay is before the Away Mission gate opens. Default is half an hour.
 ## 600 is one minute.
@@ -243,7 +243,7 @@ NEAR_DEATH_EXPERIENCE
 ## Set to 4 for "specified", silicons will start with an existing lawset. (If no specified lawset is identified, the AI will spawn with asimov.)
 
 
-DEFAULT_LAWS 0
+DEFAULT_LAWS 1
 
 ## SILICON ASIMOV SUPERIORITY OVERRIDE ###
 ## This makes "Asimov Superiority" show up as a perk for humans in the character creation menu even if asimov is not the default lawset, such as when used with asimov++
@@ -532,7 +532,7 @@ MONKEYCAP 64
 RATCAP 64
 
 ## Maximum fine for a citation
-MAXFINE 2000
+MAXFINE 100000
 
 ## Which role is required of playtime to be eligible for Maintenance Drones
 ## See code/__DEFINES/preferences.dm for available options, use the string portion without quotes
