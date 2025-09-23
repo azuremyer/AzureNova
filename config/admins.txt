@@ -7,4 +7,4 @@
 Kevin_Glitch = Host
 Wreckerlollol = Game Master
 Nazaki W. = Game Master
-Kiwidudefruit = Trial Admin
+RealNiko = Game Admin

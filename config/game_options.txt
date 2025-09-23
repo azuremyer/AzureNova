@@ -524,13 +524,13 @@ ROUNDSTART_TRAITS
 #DISABLE_HUMAN_MOOD
 
 ## Enable night shifts
-#ENABLE_NIGHT_SHIFTS
+ENABLE_NIGHT_SHIFTS
 
 ## The shift start hour in 24-hour (0-23) notation
-SHIFT_TIME_START_HOUR 7
+# SHIFT_TIME_START_HOUR 7
 
 ## Sets shift time to server time at roundstart. Overrides SHIFT_TIME_START_HOUR
-#SHIFT_TIME_REALTIME
+SHIFT_TIME_REALTIME
 
 ## Enable randomized shift start times. Overrides SHIFT_TIME_REALTIME and SHIFT_TIME_START_HOUR
 #RANDOMIZE_SHIFT_TIME
@@ -542,7 +542,7 @@ MONKEYCAP 64
 RATCAP 64
 
 ## Maximum fine for a citation
-MAXFINE 100000
+MAXFINE 1000000
 
 ## Which role is required of playtime to be eligible for Maintenance Drones
 ## See code/__DEFINES/preferences.dm for available options, use the string portion without quotes
