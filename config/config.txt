@@ -41,7 +41,7 @@ STATIONNAME Space Station 13
 #MAX_HUB_POP 100
 
 ## Lobby time: This is the amount of time between rounds that players have to setup their characters and be ready.
-LOBBY_COUNTDOWN 120
+LOBBY_COUNTDOWN 180
 
 ## Round End Time: This is the amount of time after the round ends that players have to murder death kill each other.
 ROUND_END_COUNTDOWN 90
@@ -120,7 +120,7 @@ ID_CONSOLE_JOBSLOT_DELAY 30
 #ALLOW_VOTE_MAP
 
 ## allow players to rock the vote, or to vote on the map again if they didn't like the last results
-#ALLOW_ROCK_THE_VOTE
+ALLOW_ROCK_THE_VOTE
 
 ## the number of times you wish to allow players to rock the vote in a given shift
 MAX_ROCKING_VOTES 1
@@ -147,7 +147,7 @@ ALLOW_RESPAWN 1
 RESPAWN_DELAY 600
 
 ## set a hosted by name for unix platforms
-HOSTEDBY Yournamehere
+HOSTEDBY KevinGlitch and RealNiko
 
 ## Uncomment this to stop people connecting to your server without a registered ckey. (i.e. guest-* are all blocked from connecting)
 GUEST_BAN
@@ -653,3 +653,38 @@ TGUI_MAX_CHUNK_COUNT 32
 ## While this is uncommented, server initialization will include some asset generation usually useful for development.
 ## It increases initialization time significantly so you'll want to disable this in live environments.
 GENERATE_ASSETS_IN_INIT
+
+########################################################
+## EXOBYTECHNOVA SPECIFIC CONFIGURATION OPTIONS START
+##
+## WARNING:
+## THESE OPTIONS ARE HEAVILY WIP.
+## THEY MAY NOT FUNCTION AT ALL OR CAUSE SEVERE BUGS/GLITCHES.
+## ONLY MESS WITH THESE SETTINGS IF YOU'RE A DEVELOPER OR IF
+## YOU KNOW WHAT YOU ARE DOING
+########################################################
+
+## Determines if the "Global Carry Over" system is enabled.
+## When active, a player who survives the round will preserve certain items on their character to the next station.
+## These include cybernetics/implants, items in back slots, etc.
+## AI and Cyborgs are not eligible for global carry over.
+## WARNING: THIS IS VERY UNBALANCED. IT ALSO WORKS FOR ANTAGONISTS. YOU PROBABLY WANT TO LEAVE THIS OFF.
+## NOT YET IMPLEMENTED. HERE FOR THE FUTURE.
+## 0 = the system is completely disabled. default option, recommended for most servers.
+## 1 = the system is completely enabled.
+## 2 = the system is enabled, but only if the player uses the same character who survived the last round.
+## 3 = same as 2, but if at least one non-antagonist human player does not survive, nobody gets to carry over items. this creates an actual "antagonist victory" consequence
+#EXO_ALLOW_GLOBAL_CARRY 0
+
+########################################################
+## [!!!] NSFW/ERP-RELATED OPTIONS FOLLOW.
+########################################################
+
+## While this is uncommented, all of the exhibitionist-related ERP traits are disabled.
+## This is overridden by the DISABLE_ERP_PREFERENCES setting; if enabled, they won't show up no matter what.
+## NOT YET IMPLEMENTED. HERE FOR THE FUTURE.
+#EXO_DISABLE_FETISH_TRAITS
+
+########################################################
+## EXOBYTECHNOVA SPECIFIC CONFIGURATION OPTIONS END
+########################################################

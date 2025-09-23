@@ -42,7 +42,7 @@ map metastation
 endmap
 
 map tramstation
-	votable
+	#votable
 endmap
 
 map nebulastation
