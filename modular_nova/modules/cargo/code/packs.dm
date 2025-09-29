@@ -761,11 +761,14 @@
 * VENDING RESTOCKS
 */
 
+// EXOBYTECH UPD: disables LustWish supply crate orders if "disable lewd items" is on
 /datum/supply_pack/vending/dorms
 	name = "LustWish Supply Crate"
 	desc = "This crate contains a single refill for the LustWish vendor."
 	cost = CARGO_CRATE_VALUE * 2
 	contains = list(/obj/item/vending_refill/lustwish)
+	lewd = TRUE
+// EXOBYTECH UPD END
 
 /datum/supply_pack/vending/barber
 	name = "Fab-O-Vend Supply Crate"
