@@ -5,6 +5,8 @@
 	var/group = ""
 	/// Is this cargo supply pack visible to the cargo purchasing UI.
 	var/hidden = FALSE
+	/// EXOBYTECH UPD: Is this cargo supply back hidden if "Disable Lewd Items" is toggled on in the config?
+	var/lewd = FALSE
 	/// Is this supply pack purchasable outside of the standard purchasing band? Contraband is available by multitooling the cargo purchasing board.
 	var/contraband = FALSE
 	/// Cost of the crate. DO NOT GO ANY LOWER THAN X1.4 the "CARGO_CRATE_VALUE" value if using regular crates, or infinite profit will be possible!
