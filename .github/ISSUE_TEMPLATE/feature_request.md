@@ -1,8 +1,8 @@
 ---
 name: Feature request
 about: Suggest new content or changes to existing mechanics.
-title: ''
-labels: ''
+title: "[FEATURE] Untitled feature request (please change this title)"
+labels: feature request
 assignees: ''
 
 ---
