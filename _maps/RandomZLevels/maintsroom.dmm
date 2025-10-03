@@ -8415,7 +8415,7 @@
 /turf/open/floor/iron/diagonal,
 /area/awaymission/caves/maintsroom)
 "Cb" = (
-/obj/machinery/porta_turret/syndicate/nri_raider/ancient_milsim/garrison_turret,
+/obj/machinery/porta_turret/syndicate/hc_police/ancient_milsim/garrison_turret,
 /turf/open/floor/iron/smooth,
 /area/awaymission/caves/maintsroom)
 "Cc" = (
@@ -8769,10 +8769,6 @@
 /obj/effect/turf_decal/sand/plating,
 /obj/structure/alien/weeds,
 /turf/open/floor/plating,
-/area/awaymission/caves/maintsroom)
-"Du" = (
-/obj/item/borg/sight/meson,
-/turf/open/misc/asteroid/snow/indestructible/planet,
 /area/awaymission/caves/maintsroom)
 "Dv" = (
 /obj/machinery/light/directional/east,
@@ -20638,7 +20634,7 @@ vf
 CW
 vf
 oN
-Du
+DT
 DT
 DT
 DT
