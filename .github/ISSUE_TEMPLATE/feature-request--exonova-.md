@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: Feature request (ExoNova)
 about: Suggest new content or changes to existing mechanics.
 title: "[FEATURE] Untitled feature request (please change this title)"
 labels: feature request

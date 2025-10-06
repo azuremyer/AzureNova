@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: Bug report (ExoNova)
 about: Report a bug, glitch, or exploit to help us improve gameplay.
 title: "[BUG] Untitled bug report (please change this name)"
 labels: bug
