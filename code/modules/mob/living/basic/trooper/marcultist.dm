@@ -51,7 +51,7 @@
 /// Actually interesting ranged enemies
 /mob/living/basic/trooper/marcultist/ranged/plaspistol
 	casingtype = null
-	projectiletype = /obj/projectile/beam/laser/plasma_glob/pulse
+	projectiletype = /obj/item/ammo_casing/energy/laser/plasma_glob
 	projectilesound = 'modular_nova/modules/modular_weapons/sounds/laser_firing/incinerate.ogg'
 	ranged_cooldown = 3 SECONDS
 	r_hand = /obj/item/gun/ballistic/automatic/pistol/plasma_thrower
@@ -60,7 +60,7 @@
 
 /mob/living/basic/trooper/marcultist/ranged/pulserifle
 	casingtype = null
-	projectiletype = /obj/projectile/beam/pulse
+	projectiletype = /obj/projectile/beam/laser/plasma_glob/pulse
 	projectilesound = 'modular_nova/modules/modular_weapons/sounds/pulse_shoot.ogg'
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged/burst
 	burst_shots = 3
@@ -71,7 +71,7 @@
 
 /mob/living/basic/trooper/marcultist/ranged/pulsesniper
 	casingtype = null
-	projectiletype = /obj/projectile/beam/pulse/heavy
+	projectiletype = /obj/projectile/beam/laser/plasma_glob/pulse
 	projectilesound = 'modular_nova/modules/modular_weapons/sounds/pulse_shoot.ogg'
 	ranged_cooldown = 5 SECONDS
 	r_hand = /obj/item/gun/ballistic/rifle/pulse_sniper

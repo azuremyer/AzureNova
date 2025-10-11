@@ -205,3 +205,17 @@
 
 /obj/item/ammo_box/magazine/pulse/spawns_empty
 	start_empty = TRUE
+
+// Magazine for the less legally distinct AR2
+
+/obj/item/ammo_box/magazine/pulse/extended
+	name = "\improper Žaibas extended pulse magazine"
+	desc = "An extended-capacity magazine containing pulse energy cells for the Žaibas rifle. Holds three crystalline plasma plugs, each good for fifteen shots. \
+			The casing bears a stamped 'SD-4M' mark (Szot Dynamica 4-Plug Military) alongside SolFed compliance certifications."
+	ammo_type = /obj/item/ammo_casing/pulse/extended
+	caliber = "pulse"
+	max_ammo = 4
+	magazine_designation = "'SD-4M'"
+
+/obj/item/ammo_box/magazine/pulse/extended/spawns_empty
+	start_empty = TRUE
