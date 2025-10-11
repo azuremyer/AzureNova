@@ -9,7 +9,7 @@
 	minimum_survivable_temperature = 0
 	var/projectile_deflect_chance = 0
 
-/mob/living/basic/trooper/syndicate/melee/bullet_act(obj/projectile/projectile)
+/mob/living/basic/trooper/marcultist/melee/bullet_act(obj/projectile/projectile)
 	if(prob(projectile_deflect_chance))
 		visible_message(span_danger("[src] blocks [projectile] with its shield!"))
 		return BULLET_ACT_BLOCK
