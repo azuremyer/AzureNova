@@ -150,9 +150,13 @@
 	name = "PC MAPU"
 	desc = "A modification of the micro reactor design, the Modular Antimatter Power Unit is a self-sustaining matter-antimatter \
 		reaction chamber producing a steady stream of high-power output. Phoenix Collective says it's safe. Mostly."
+	icon_state = "amreactor0_0"
+	base_icon_state = "amreactor0"
 
 	interaction_flags_atom = INTERACT_ATOM_ATTACK_HAND
 
 	power_gen = 5 MEGA WATTS
 
-	light_color = LIGHT_COLOR_LAVENDER
+	light_color = COLOR_BIOLUMINESCENCE_PURPLE
+
+	///var/datum/looping_sound/generator/antimatter/soundloop
