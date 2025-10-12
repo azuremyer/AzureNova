@@ -144,3 +144,15 @@
 	interaction_flags_atom = INTERACT_ATOM_ATTACK_HAND
 
 	light_color = LIGHT_COLOR_ELECTRIC_CYAN
+
+/// EXOBYTECHNOVA UPD: Phoenix Collective MAPU
+/obj/machinery/power/micro_reactor/mapu
+	name = "PC MAPU"
+	desc = "A modification of the micro reactor design, the Modular Antimatter Power Unit is a self-sustaining matter-antimatter \
+		reaction chamber producing a steady stream of high-power output. Phoenix Collective says it's safe. Mostly."
+
+	interaction_flags_atom = INTERACT_ATOM_ATTACK_HAND
+
+	power_gen = 5 MEGA WATTS
+
+	light_color = LIGHT_COLOR_LAVENDER
