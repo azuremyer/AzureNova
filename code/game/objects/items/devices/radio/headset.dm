@@ -189,6 +189,20 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "team leader headset"
 	command = TRUE
 
+//EXOBYTECHNOVA UPD: phoenix collective headset, modded syndie tech i guess
+/obj/item/radio/headset/phoenixcc
+	name = "Phoenix Collective CentCom headset"
+	desc = "A headset used by Phoenix Collective Central Command staff. Protects ears from flashbangs. (Will get its texture changed later.)"
+	icon_state = "syndie_headset"
+	worn_icon_state = "syndie_headset"
+	keyslot = /obj/item/encryptionkey/heads/captain
+	keyslot2 = /obj/item/encryptionkey/headset_cent
+
+/obj/item/radio/headset/phoenixcc/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection)
+// EXOBYTECHNOVA UPDATE END
+
 /obj/item/radio/headset/binary
 	keyslot = /obj/item/encryptionkey/binary
 

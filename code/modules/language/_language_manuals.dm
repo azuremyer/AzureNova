@@ -61,6 +61,13 @@
 	name = "deluxe codespeak manual"
 	charges = INFINITY
 
+/obj/item/language_manual/tradecreole
+	name = "not codespeak manual"
+	desc = "What the f--- is this?"
+	language = /datum/language/creole
+	charges = INFINITY
+	flavour_text = "suddenly the words of a language from origins untold are ingrained in your mind"
+
 /obj/item/language_manual/roundstart_species
 
 /obj/item/language_manual/roundstart_species/Initialize(mapload)

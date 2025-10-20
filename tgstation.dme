@@ -7961,6 +7961,7 @@
 #include "modular_nova\modules\customization\modules\language\spacer.dm"
 #include "modular_nova\modules\customization\modules\language\te_velu_akko.dm"
 #include "modular_nova\modules\customization\modules\language\terrum.dm"
+#include "modular_nova\modules\customization\modules\language\tradecreole.dm"
 #include "modular_nova\modules\customization\modules\language\vox.dm"
 #include "modular_nova\modules\customization\modules\language\xerxian.dm"
 #include "modular_nova\modules\customization\modules\language\yangyu.dm"

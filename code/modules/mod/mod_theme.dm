@@ -1330,6 +1330,92 @@
 	acid = 100
 	wound = 25
 
+// EXOBYTECHNOVA UPD: Phoenix Collective MOD suit theme, based off the elite modsuit
+/datum/mod_theme/phoenix
+	name = "phoenix"
+	desc = "An elite MOD suit modified and improved by the Phoenix Collective to serve a wide variety of purposes. \
+		Those who wear this do not fly with children of the dust."
+	extended_desc = "A retrofit of the Syndicate elite suit, this MOD suit is meant as a high-tier general purpose \
+		MOD suit. It's been mass produced for the members of Phoenix Collective's imperial populations. While the \
+		design is primarily used by combatives such as security personnel, non-combat departments such as engineering \
+		have still managed to get use out of it with some modifications.. A label on the inside of the suit's panel \
+		reads as follows: 'Manufactured by the Phoenix Collective Department of Industry. Property of the Collective. \
+		For usage by Imperial personnel only. Unauthorized usage is punishable by law.'"
+	default_skin = "elite"
+	armor_type = /datum/armor/mod_theme_phoenix
+	resistance_flags = FIRE_PROOF|ACID_PROOF|FREEZE_PROOF
+	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	complexity_max = DEFAULT_MAX_COMPLEXITY + 10
+	siemens_coefficient = 0
+	slowdown_deployed = 0
+	ui_theme = "ntos_terminal"
+	inbuilt_modules = list(/obj/item/mod/module/welding/syndicate, /obj/item/mod/module/night,
+		/obj/item/mod/module/hearing_protection, /obj/item/mod/module/springlock/contractor/no_complexity,
+		/obj/item/mod/module/hat_stabilizer/syndicate)
+	allowed_suit_storage = list(
+		/obj/item/restraints/handcuffs,
+		/obj/item/healthanalyzer,
+		/obj/item/assembly/flash,
+		/obj/item/reagent_containers/cup/beaker,
+		/obj/item/reagent_containers/cup/bottle,
+		/obj/item/reagent_containers/cup/tube,
+		/obj/item/reagent_containers/dropper,
+		/obj/item/reagent_containers/hypospray,
+		/obj/item/reagent_containers/applicator/pill,
+		/obj/item/reagent_containers/syringe,
+		/obj/item/gun,
+		/obj/item/melee/baton,
+		/obj/item/melee/energy/sword,
+		/obj/item/shield/energy,
+	)
+	variants = list(
+		"phoenix" = list(
+			/obj/item/clothing/head/mod = list(
+				UNSEALED_CLOTHING = SNUG_FIT,
+				SEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE|BLOCK_GAS_SMOKE_EFFECT|HEADINTERNALS,
+				UNSEALED_INVISIBILITY = HIDEFACIALHAIR,
+				SEALED_INVISIBILITY = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDESNOUT,
+				SEALED_COVER = HEADCOVERSMOUTH|HEADCOVERSEYES|PEPPERPROOF,
+				UNSEALED_MESSAGE = HELMET_UNSEAL_MESSAGE,
+				SEALED_MESSAGE = HELMET_SEAL_MESSAGE,
+			),
+			/obj/item/clothing/suit/mod = list(
+				UNSEALED_CLOTHING = THICKMATERIAL,
+				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
+				SEALED_INVISIBILITY = HIDEJUMPSUIT,
+				UNSEALED_MESSAGE = CHESTPLATE_UNSEAL_MESSAGE,
+				SEALED_MESSAGE = CHESTPLATE_SEAL_MESSAGE,
+			),
+			/obj/item/clothing/gloves/mod = list(
+				UNSEALED_CLOTHING = THICKMATERIAL,
+				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
+				CAN_OVERSLOT = TRUE,
+				UNSEALED_MESSAGE = GAUNTLET_UNSEAL_MESSAGE,
+				SEALED_MESSAGE = GAUNTLET_SEAL_MESSAGE,
+			),
+			/obj/item/clothing/shoes/mod = list(
+				UNSEALED_CLOTHING = THICKMATERIAL,
+				SEALED_CLOTHING = STOPSPRESSUREDAMAGE,
+				CAN_OVERSLOT = TRUE,
+				UNSEALED_MESSAGE = BOOT_UNSEAL_MESSAGE,
+				SEALED_MESSAGE = BOOT_SEAL_MESSAGE,
+			),
+		),
+	)
+
+/datum/armor/mod_theme_phoenix
+	melee = 70
+	bullet = 65
+	laser = 70
+	energy = 60
+	bomb = 50
+	bio = 100
+	fire = 100
+	acid = 100
+	wound = 40
+// EXOBYTECHNOVA UPDATE END
+
 /datum/mod_theme/infiltrator
 	name = "infiltrator"
 	desc = "A specialized infiltration suit, developed by the Roseus Galactic Actors Guild to strike fear and awe into the hearts of the public."

@@ -368,6 +368,48 @@
 	. = ..()
 	ADD_TRAIT(src, TRAIT_CONTRABAND_BLOCKER, INNATE_TRAIT)
 
+/obj/item/mod/control/pre_equipped/elite
+	theme = /datum/mod_theme/elite
+	starting_frequency = MODLINK_FREQ_SYNDICATE
+	applied_cell = /obj/item/stock_parts/power_store/cell/bluespace
+	req_access = list(ACCESS_SYNDICATE)
+	applied_modules = list(
+		/obj/item/mod/module/storage/syndicate,
+		/obj/item/mod/module/shock_absorber,
+		/obj/item/mod/module/emp_shield,
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/jump_jet,
+		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/hat_stabilizer/syndicate,
+		/obj/item/mod/module/quick_cuff,
+	)
+	default_pins = list(
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/jump_jet,
+	)
+
+// EXOBYTECHNOVA UPD: Phoenix Collective MOD suit types.
+/obj/item/mod/control/pre_equipped/phoenix
+	theme = /datum/mod_theme/phoenix
+	starting_frequency = MODLINK_FREQ_NANOTRASEN
+	applied_cell = /obj/item/stock_parts/power_store/cell/infinite/nif_cell
+	applied_modules = list(
+		/obj/item/mod/module/storage/bluespace,
+		/obj/item/mod/module/emp_shield/advanced,
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/status_readout,
+		/obj/item/mod/module/dna_lock,
+		/obj/item/mod/module/longfall,
+		/obj/item/mod/module/noslip,
+		/obj/item/mod/module/gps,
+	)
+	default_pins = list(
+		/obj/item/mod/module/jetpack/advanced,
+	)
+// EXOBYTECHNOVA UPDATE END
+
 /obj/item/mod/control/pre_equipped/interdyne
 	theme = /datum/mod_theme/interdyne
 	starting_frequency = MODLINK_FREQ_SYNDICATE
@@ -665,6 +707,10 @@
 
 /obj/item/mod/control/pre_equipped/empty/elite
 	theme = /datum/mod_theme/elite
+
+// EXOBYTECHNOVA UPD: Phoenix modsuit
+/obj/item/mod/control/pre_equipped/empty/phoenix
+	theme = /datum/mod_theme/phoenix
 
 /obj/item/mod/control/pre_equipped/empty/ninja
 	theme = /datum/mod_theme/ninja
