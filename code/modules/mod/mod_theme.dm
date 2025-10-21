@@ -1330,13 +1330,13 @@
 	acid = 100
 	wound = 25
 
-// EXOBYTECHNOVA UPD: Phoenix Collective MOD suit theme, based off the elite modsuit
+// EXOBYTECHNOVA UPD: Phoenix Collective MOD suit themes, based off the elite modsuit
 /datum/mod_theme/phoenix
 	name = "phoenix"
 	desc = "An elite MOD suit modified and improved by the Phoenix Collective to serve a wide variety of purposes. \
 		Those who wear this do not fly with children of the dust."
-	extended_desc = "A retrofit of the Syndicate elite suit, this MOD suit is meant as a high-tier general purpose \
-		MOD suit. It's been mass produced for the members of Phoenix Collective's imperial populations. While the \
+	extended_desc = "A retrofitting of the Syndicate elite suit, this MOD suit is meant as a high-tier general purpose \
+		option, and has been mass produced for the members of Phoenix Collective's imperial populations. While the \
 		design is primarily used by combatives such as security personnel, non-combat departments such as engineering \
 		have still managed to get use out of it with some modifications.. A label on the inside of the suit's panel \
 		reads as follows: 'Manufactured by the Phoenix Collective Department of Industry. Property of the Collective. \

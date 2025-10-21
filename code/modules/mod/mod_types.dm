@@ -398,7 +398,7 @@
 		/obj/item/mod/module/storage/bluespace,
 		/obj/item/mod/module/emp_shield/advanced,
 		/obj/item/mod/module/jetpack/advanced,
-		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/status_readout,
 		/obj/item/mod/module/dna_lock,
 		/obj/item/mod/module/longfall,
@@ -595,6 +595,36 @@
 /obj/item/mod/control/pre_equipped/responsory/inquisitory/chaplain
 	insignia_type = /obj/item/mod/module/insignia/chaplain
 	additional_modules = /obj/item/mod/module/injector
+
+// EXOBYTECHNOVA UPD: Phoenix Collective modsuit variants
+// Had to be declared down here or else the server wouldn't build
+/obj/item/mod/control/pre_equipped/phoenix/engineer
+	insignia_type = /obj/item/mod/module/insignia/engineer
+	additional_modules = list(
+		/obj/item/mod/module/magboot/advanced,
+		/obj/item/mod/module/rad_protection,
+		/obj/item/mod/module/headprotector,
+	)
+
+/obj/item/mod/control/pre_equipped/phoenix/medical
+	insignia_type = /obj/item/mod/module/insignia/medic
+	additional_modules = list(
+		/obj/item/mod/module/health_analyzer,
+		/obj/item/mod/module/quick_carry,
+		/obj/item/mod/module/injector,
+		/obj/item/mod/module/criminalcapture/patienttransport,
+		/obj/item/mod/module/thread_ripper,
+	)
+
+/obj/item/mod/control/pre_equipped/phoenix/security
+	insignia_type = /obj/item/mod/module/insignia/security
+	additional_modules = list(
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/criminalcapture,
+		/obj/item/mod/module/rad_protection,
+		/obj/item/mod/module/headprotector,
+	)
+// EXOBYTECHNOVA UPD END
 
 /obj/item/mod/control/pre_equipped/apocryphal
 	theme = /datum/mod_theme/apocryphal

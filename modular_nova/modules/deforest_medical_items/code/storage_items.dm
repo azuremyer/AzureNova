@@ -168,7 +168,7 @@
 		/obj/item/stack/medical/mesh/advanced = 2,
 		/obj/item/reagent_containers/hypospray/combat/nanites = 1,
 		/obj/item/reagent_containers/hypospray/medipen/deforest/calopine = 1,
-		/obj/item/stack/medical/gauze/sterilized = 1,
+		/obj/item/stack/medical/gauze/twelve = 1,
 	)
 	generate_items_inside(items_inside,src)
 
