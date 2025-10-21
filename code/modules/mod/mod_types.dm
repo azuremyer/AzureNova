@@ -408,6 +408,46 @@
 	default_pins = list(
 		/obj/item/mod/module/jetpack/advanced,
 	)
+	/// Copy/pasted from the Responsory modsuits.
+	/// The insignia type, insignias show what sort of member of the ERT you're dealing with.
+	var/insignia_type
+	/// Additional module (or modules if list) we add, as a treat.
+	var/additional_modules
+
+/obj/item/mod/control/pre_equipped/phoenix/Initialize(mapload, new_theme, new_skin, new_core)
+	if(insignia_type)
+		applied_modules.Insert(1, insignia_type)
+	if(additional_modules)
+		applied_modules += additional_modules
+		default_pins += additional_modules
+	return ..()
+
+/obj/item/mod/control/pre_equipped/phoenix/engineer
+	insignia_type = /obj/item/mod/module/insignia/engineer
+	additional_modules = list(
+		/obj/item/mod/module/magboot/advanced,
+		/obj/item/mod/module/rad_protection,
+		/obj/item/mod/module/headprotector,
+	)
+
+/obj/item/mod/control/pre_equipped/phoenix/medical
+	insignia_type = /obj/item/mod/module/insignia/medic
+	additional_modules = list(
+		/obj/item/mod/module/health_analyzer,
+		/obj/item/mod/module/quick_carry,
+		/obj/item/mod/module/injector,
+		/obj/item/mod/module/criminalcapture/patienttransport,
+		/obj/item/mod/module/thread_ripper,
+	)
+
+/obj/item/mod/control/pre_equipped/phoenix/security
+	insignia_type = /obj/item/mod/module/insignia/security
+	additional_modules = list(
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/criminalcapture,
+		/obj/item/mod/module/rad_protection,
+		/obj/item/mod/module/headprotector,
+	)
 // EXOBYTECHNOVA UPDATE END
 
 /obj/item/mod/control/pre_equipped/interdyne
@@ -595,36 +635,6 @@
 /obj/item/mod/control/pre_equipped/responsory/inquisitory/chaplain
 	insignia_type = /obj/item/mod/module/insignia/chaplain
 	additional_modules = /obj/item/mod/module/injector
-
-// EXOBYTECHNOVA UPD: Phoenix Collective modsuit variants
-// Had to be declared down here or else the server wouldn't build
-/obj/item/mod/control/pre_equipped/phoenix/engineer
-	insignia_type = /obj/item/mod/module/insignia/engineer
-	additional_modules = list(
-		/obj/item/mod/module/magboot/advanced,
-		/obj/item/mod/module/rad_protection,
-		/obj/item/mod/module/headprotector,
-	)
-
-/obj/item/mod/control/pre_equipped/phoenix/medical
-	insignia_type = /obj/item/mod/module/insignia/medic
-	additional_modules = list(
-		/obj/item/mod/module/health_analyzer,
-		/obj/item/mod/module/quick_carry,
-		/obj/item/mod/module/injector,
-		/obj/item/mod/module/criminalcapture/patienttransport,
-		/obj/item/mod/module/thread_ripper,
-	)
-
-/obj/item/mod/control/pre_equipped/phoenix/security
-	insignia_type = /obj/item/mod/module/insignia/security
-	additional_modules = list(
-		/obj/item/mod/module/magnetic_harness,
-		/obj/item/mod/module/criminalcapture,
-		/obj/item/mod/module/rad_protection,
-		/obj/item/mod/module/headprotector,
-	)
-// EXOBYTECHNOVA UPD END
 
 /obj/item/mod/control/pre_equipped/apocryphal
 	theme = /datum/mod_theme/apocryphal
