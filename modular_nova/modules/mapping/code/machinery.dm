@@ -48,6 +48,7 @@
 	var/power_gen = 200 KILO WATTS
 	var/active = FALSE
 	var/power_output = 1
+	var/is_mapu = FALSE
 
 	interaction_flags_atom = INTERACT_ATOM_ATTACK_HAND
 
@@ -81,11 +82,13 @@
 
 /obj/machinery/power/micro_reactor/attack_hand(mob/user, list/modifiers)
 	. = ..()
-	TogglePower()
+	if (!is_mapu)
+		TogglePower()
 
 /obj/machinery/power/micro_reactor/attack_robot(mob/user)
 	. = ..()
-	TogglePower()
+	if (!is_mapu)
+		TogglePower()
 
 /obj/machinery/power/micro_reactor/proc/handleInactive()
 	return
@@ -157,12 +160,13 @@
 	interaction_flags_atom = INTERACT_ATOM_ATTACK_HAND
 
 	power_gen = 5 MEGA WATTS
+	is_mapu = TRUE
 
 	light_color = COLOR_BIOLUMINESCENCE_PURPLE
 
 	var/datum/looping_sound/generator/antimatter/soundloop2
 
-/obj/machinery/power/micro_reactor/mapu/proc/TogglePower()
+/obj/machinery/power/micro_reactor/mapu/proc/TogglePowerMAPU()
 	if(active)
 		active = FALSE
 		set_light_power(0)
@@ -180,11 +184,11 @@
 
 /obj/machinery/power/micro_reactor/mapu/attack_hand(mob/user, list/modifiers)
 	. = ..()
-	TogglePower()
+	TogglePowerMAPU()
 
 /obj/machinery/power/micro_reactor/mapu/attack_robot(mob/user)
 	. = ..()
-	TogglePower()
+	TogglePowerMAPU()
 
 /obj/machinery/power/micro_reactor/mapu/Destroy()
 	QDEL_NULL(soundloop2)

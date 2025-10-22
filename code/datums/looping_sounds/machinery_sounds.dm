@@ -51,7 +51,7 @@
 	mid_sounds = list(
 		'sound/machines/generator/antimatter/generator_mid1.ogg',
 	)
-	mid_length = 49.3 SECONDS
+	mid_length = 2.8 SECONDS
 	end_sound = 'sound/machines/generator/antimatter/generator_end.ogg'
 	volume = 40
 
