@@ -152,6 +152,7 @@
 		reaction chamber producing a steady stream of high-power output. Phoenix Collective says it's safe. Mostly."
 	icon_state = "amreactor0_0"
 	base_icon_state = "amreactor0"
+	resistance_flags = INDESTRUCTIBLE
 
 	interaction_flags_atom = INTERACT_ATOM_ATTACK_HAND
 
@@ -159,4 +160,36 @@
 
 	light_color = COLOR_BIOLUMINESCENCE_PURPLE
 
-	///var/datum/looping_sound/generator/antimatter/soundloop
+	var/datum/looping_sound/generator/antimatter/soundloop2
+
+/obj/machinery/power/micro_reactor/mapu/proc/TogglePower()
+	if(active)
+		active = FALSE
+		set_light_power(0)
+		set_light_on(0)
+		update_appearance()
+		soundloop2.stop()
+	else
+		active = TRUE
+		START_PROCESSING(SSmachines, src)
+		set_light_power(3)
+		set_light_range(2)
+		set_light_on(TRUE)
+		update_appearance()
+		soundloop2.start()
+
+/obj/machinery/power/micro_reactor/mapu/attack_hand(mob/user, list/modifiers)
+	. = ..()
+	TogglePower()
+
+/obj/machinery/power/micro_reactor/mapu/attack_robot(mob/user)
+	. = ..()
+	TogglePower()
+
+/obj/machinery/power/micro_reactor/mapu/Destroy()
+	QDEL_NULL(soundloop2)
+	return ..()
+
+/obj/machinery/power/micro_reactor/mapu/Initialize(mapload)
+	. = ..()
+	soundloop2 = new(src, active)
