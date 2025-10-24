@@ -76,6 +76,9 @@
 /datum/mod_theme/elite
 	hardlight_theme = ALERT_AMBER
 
+/datum/mod_theme/phoenix
+	hardlight_theme = ALERT_AMBER
+
 /*	https://github.com/Skyrat-SS13/Skyrat-tg/pull/17455
 /datum/mod_theme/covert
 	hardlight_theme =

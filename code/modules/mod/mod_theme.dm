@@ -1371,8 +1371,6 @@
 	)
 	variants = list(
 		"phoenix" = list(
-			MOD_ICON_OVERRIDE = 'modular_nova/master_files/icons/obj/clothing/modsuit/mod_clothing.dmi',
-			MOD_WORN_ICON_OVERRIDE = 'modular_nova/master_files/icons/mob/clothing/modsuit/mod_clothing.dmi',
 			/obj/item/clothing/head/mod = list(
 				UNSEALED_CLOTHING = SNUG_FIT,
 				SEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE|BLOCK_GAS_SMOKE_EFFECT|HEADINTERNALS,
