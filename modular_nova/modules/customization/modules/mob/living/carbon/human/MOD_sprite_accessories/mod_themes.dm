@@ -76,9 +76,6 @@
 /datum/mod_theme/elite
 	hardlight_theme = ALERT_AMBER
 
-/datum/mod_theme/phoenix
-	hardlight_theme = ALERT_AMBER
-
 /*	https://github.com/Skyrat-SS13/Skyrat-tg/pull/17455
 /datum/mod_theme/covert
 	hardlight_theme =
@@ -93,6 +90,11 @@
 
 /datum/mod_theme/cosmohonk
 	hardlight_theme = CONTRACTOR_RED
+
+/// EXOBYTECHNOVA UPD: Phoenix Collective MOD suit
+/datum/mod_theme/phoenix
+	hardlight_theme = ALERT_AMBER
+/// EXOBYTECHNOVA UPD END
 
 
 // ERT
