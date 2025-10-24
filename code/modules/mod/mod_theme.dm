@@ -1341,7 +1341,7 @@
 		have still managed to get use out of it with some modifications.. A label on the inside of the suit's panel \
 		reads as follows: 'Manufactured by the Phoenix Collective Department of Industry. Property of the Collective. \
 		For usage by Imperial personnel only. Unauthorized usage is punishable by law.'"
-	default_skin = "elite"
+	default_skin = "phoenix"
 	armor_type = /datum/armor/mod_theme_phoenix
 	resistance_flags = FIRE_PROOF|ACID_PROOF|FREEZE_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
@@ -1371,6 +1371,8 @@
 	)
 	variants = list(
 		"phoenix" = list(
+			MOD_ICON_OVERRIDE = 'modular_nova/master_files/icons/obj/clothing/modsuit/mod_clothing.dmi',
+			MOD_WORN_ICON_OVERRIDE = 'modular_nova/master_files/icons/mob/clothing/modsuit/mod_clothing.dmi',
 			/obj/item/clothing/head/mod = list(
 				UNSEALED_CLOTHING = SNUG_FIT,
 				SEALED_CLOTHING = THICKMATERIAL|STOPSPRESSUREDAMAGE|BLOCK_GAS_SMOKE_EFFECT|HEADINTERNALS,
