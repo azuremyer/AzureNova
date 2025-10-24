@@ -85,6 +85,7 @@
 /obj/item/storage/box/cables
 	name = "cable coil box"
 	desc = "A box made for electrical-loving FREAKS who can't figure out how to use an electrical toolbox instead."
+	icon_state = "engibox"
 	illustration = "cable_coil"
 
 /obj/item/storage/box/powercells
