@@ -176,8 +176,8 @@
 	else
 		active = TRUE
 		START_PROCESSING(SSmachines, src)
-		set_light_power(5)
-		set_light_range(2)
+		set_light_power(4)
+		set_light_range(5)
 		set_light_on(TRUE)
 		update_appearance()
 		soundloop2.start()
