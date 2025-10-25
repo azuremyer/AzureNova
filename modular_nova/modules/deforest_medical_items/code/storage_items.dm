@@ -159,10 +159,17 @@
 	)
 	generate_items_inside(items_inside,src)
 
-// EXOBYTECH UPD: Pre-packed Frontier medkit, Phoenix Collective version
-/obj/item/storage/medkit/frontier/stocked/phoenix
+// EXOBYTECHNOVA UPD: Phoenix Collective medkits, based off the Frontier medkits but better.
+// This is literally just a texture change if you don't use the pre-stocked versions.
+/obj/item/storage/medkit/frontier/phoenix
+	name = "phoenix collective medical kit"
+	desc = "A roll-top waterproof medkit, intended for usage by Phoenix Collective imperials. Its polysilicate fabrics are woven in a way that makes it resilient to \
+		the environment of unexplored Frontier worlds, while still preserving a lightweight easy-to-carry profile. It has a clip for hooking onto your belt."
+	icon_state = "phoenix"
 
-/obj/item/storage/medkit/frontier/stocked/phoenix/PopulateContents()
+/obj/item/storage/medkit/frontier/phoenix/stocked
+
+/obj/item/storage/medkit/frontier/phoenix/stocked/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/stack/medical/suture/bloody = 2,
 		/obj/item/stack/medical/mesh/advanced = 2,
@@ -171,6 +178,23 @@
 		/obj/item/stack/medical/gauze/twelve = 1,
 	)
 	generate_items_inside(items_inside,src)
+
+/obj/item/storage/medkit/frontier/phoenix/toxin
+	name = "phoenix collective toxin treatment kit"
+	desc = "A waterproof toxin treatment kit, intended for usage by Phoenix Collective imperials. While toxins are notoriously difficult to treat, the Phoenix Collective
+		\ has done their best to make the materials needed to treat it as readily available as possible. The medkit has a clip for hooking onto your belt."
+	icon_state = "phoenix_tox"
+
+/obj/item/storage/medkit/frontier/phoenix/toxin/stocked
+
+/obj/item/storage/medkit/frontier/phoenix/toxin/stocked/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/reagent_containers/hypospray/medipen/penacid = 3,
+		/obj/item/reagent_containers/cup/bottle/syriniver = 2,
+		/obj/item/reagent_containers/hypospray/medipen/deforest/meridine = 2,
+	)
+	generate_items_inside(items_inside,src)
+// EXOBYTECHNOVA UPD END
 
 // Pre-packed combat surgeon medkit, with items for fixing more specific injuries and wounds
 /obj/item/storage/medkit/combat_surgeon

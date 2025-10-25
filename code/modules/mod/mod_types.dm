@@ -404,21 +404,22 @@
 		/obj/item/mod/module/noslip,
 		/obj/item/mod/module/gps,
 	)
-	default_pins = list(
-		/obj/item/mod/module/jetpack/advanced,
-	)
+	default_pins = list()
 	/// Copy/pasted from the Responsory modsuits.
 	/// The insignia type, insignias show what sort of member of the ERT you're dealing with.
 	var/insignia_type
 	/// Additional module (or modules if list) we add, as a treat.
 	var/additional_modules
+	/// Not copy/pasted, but still important. Additional default pins.
+	var/additional_pins
 
 /obj/item/mod/control/pre_equipped/phoenix/Initialize(mapload, new_theme, new_skin, new_core)
 	if(insignia_type)
 		applied_modules.Insert(1, insignia_type)
 	if(additional_modules)
 		applied_modules += additional_modules
-		default_pins += additional_modules
+	if(additional_pins)
+		default_pins += additional_pins
 	return ..()
 
 /obj/item/mod/control/pre_equipped/phoenix/engineer
@@ -429,6 +430,10 @@
 		/obj/item/mod/module/headprotector,
 		/obj/item/mod/module/jetpack/advanced,
 	)
+	additional_pins = list(
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/magboot/advanced,
+	)
 
 /obj/item/mod/control/pre_equipped/phoenix/medical
 	insignia_type = /obj/item/mod/module/insignia/medic
@@ -437,7 +442,27 @@
 		/obj/item/mod/module/quick_carry,
 		/obj/item/mod/module/injector,
 		/obj/item/mod/module/criminalcapture/patienttransport,
+		/obj/item/mod/module/jetpack,
+	)
+	additional_pins = list(
+	/obj/item/mod/module/jetpack,
+		/obj/item/mod/module/surgical_processor/emergency,
+		/obj/item/mod/module/criminalcapture/patienttransport,
+	)
+
+/obj/item/mod/control/pre_equipped/phoenix/medical/surgical
+	insignia_type = /obj/item/mod/module/insignia/medic
+	additional_modules = list(
+		/obj/item/mod/module/health_analyzer,
+		/obj/item/mod/module/quick_carry,
 		/obj/item/mod/module/thread_ripper,
+		/obj/item/mod/module/surgical_processor/emergency,
+		/obj/item/mod/module/jetpack,
+	)
+	additional_pins = list(
+		/obj/item/mod/module/jetpack,
+		/obj/item/mod/module/health_analyzer,
+		/obj/item/mod/module/surgical_processor/emergency,
 	)
 
 /obj/item/mod/control/pre_equipped/phoenix/security
@@ -447,6 +472,11 @@
 		/obj/item/mod/module/criminalcapture,
 		/obj/item/mod/module/rad_protection,
 		/obj/item/mod/module/headprotector,
+		/obj/item/mod/module/jetpack,
+	)
+	additional_pins = list(
+		/obj/item/mod/module/jetpack,
+		/obj/item/mod/module/criminalcapture,
 	)
 
 /obj/item/mod/control/pre_equipped/phoenix/command
