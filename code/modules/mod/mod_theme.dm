@@ -468,7 +468,7 @@
 	resistance_flags = FIRE_PROOF|LAVA_PROOF
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	min_cold_protection_temperature = FIRE_SUIT_MIN_TEMP_PROTECT
-	complexity_max = DEFAULT_MAX_COMPLEXITY - 2
+	complexity_max = DEFAULT_MAX_COMPLEXITY
 	charge_drain = DEFAULT_CHARGE_DRAIN * 2
 	inbuilt_modules = list(/obj/item/mod/module/ash_accretion, /obj/item/mod/module/sphere_transform)
 	variants = list(
@@ -1272,7 +1272,7 @@
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
-	complexity_max = DEFAULT_MAX_COMPLEXITY + 4
+	complexity_max = DEFAULT_MAX_COMPLEXITY + 5
 	siemens_coefficient = 0
 	slowdown_deployed = 0
 	ui_theme = "syndicate"
@@ -1343,7 +1343,7 @@
 		For usage by Imperial personnel only. Unauthorized usage is punishable by law.'"
 	default_skin = "phoenix"
 	armor_type = /datum/armor/mod_theme_phoenix
-	resistance_flags = FIRE_PROOF|ACID_PROOF|FREEZE_PROOF
+	resistance_flags = LAVA_PROOF|FIRE_PROOF|ACID_PROOF|FREEZE_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	complexity_max = DEFAULT_MAX_COMPLEXITY + 10
@@ -2112,7 +2112,7 @@
 	max_heat_protection_temperature = FIRE_SUIT_MAX_TEMP_PROTECT
 	complexity_max = DEFAULT_MAX_COMPLEXITY - 10
 	slowdown_deployed = 0
-	inbuilt_modules = list(/obj/item/mod/module/hearing_protection)
+	inbuilt_modules = list(/obj/item/mod/module/hearing_protection/elite)
 	allowed_suit_storage = list(
 		/obj/item/restraints/handcuffs,
 	)

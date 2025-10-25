@@ -389,15 +389,14 @@
 		/obj/item/mod/module/jump_jet,
 	)
 
-// EXOBYTECHNOVA UPD: Phoenix Collective MOD suit types.
+// EXOBYTECHNOVA UPD: Phoenix Collective MOD suit types. Broken as fuck right now. These are admin-only for a reason, you know...
 /obj/item/mod/control/pre_equipped/phoenix
 	theme = /datum/mod_theme/phoenix
 	starting_frequency = MODLINK_FREQ_NANOTRASEN
 	applied_cell = /obj/item/stock_parts/power_store/cell/infinite/nif_cell
 	applied_modules = list(
-		/obj/item/mod/module/storage/bluespace,
+		/obj/item/mod/module/storage/phoenix,
 		/obj/item/mod/module/emp_shield/advanced,
-		/obj/item/mod/module/jetpack/advanced,
 		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/status_readout,
 		/obj/item/mod/module/dna_lock,
@@ -428,6 +427,7 @@
 		/obj/item/mod/module/magboot/advanced,
 		/obj/item/mod/module/rad_protection,
 		/obj/item/mod/module/headprotector,
+		/obj/item/mod/module/jetpack/advanced,
 	)
 
 /obj/item/mod/control/pre_equipped/phoenix/medical
@@ -447,6 +447,17 @@
 		/obj/item/mod/module/criminalcapture,
 		/obj/item/mod/module/rad_protection,
 		/obj/item/mod/module/headprotector,
+	)
+
+/obj/item/mod/control/pre_equipped/phoenix/command
+	insignia_type = /obj/item/mod/module/insignia/commander
+	additional_modules = list(
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/criminalcapture,
+		/obj/item/mod/module/health_analyzer,
+		/obj/item/mod/module/rad_protection,
+		/obj/item/mod/module/headprotector,
+		/obj/item/mod/module/jetpack/advanced,
 	)
 // EXOBYTECHNOVA UPDATE END
 
