@@ -181,8 +181,8 @@
 
 /obj/item/storage/medkit/frontier/phoenix/toxin
 	name = "phoenix collective toxin treatment kit"
-	desc = "A waterproof toxin treatment kit, intended for usage by Phoenix Collective imperials. While toxins are notoriously difficult to treat, the Phoenix Collective
-		\ has done their best to make the materials needed to treat it as readily available as possible. The medkit has a clip for hooking onto your belt."
+	desc = "A waterproof toxin treatment kit, intended for usage by Phoenix Collective imperials. While toxins are notoriously difficult to treat, the Phoenix Collective \
+		has done their best to make the materials needed to treat it as readily available as possible. The medkit has a clip for hooking onto your belt."
 	icon_state = "phoenix_tox"
 
 /obj/item/storage/medkit/frontier/phoenix/toxin/stocked
