@@ -162,7 +162,7 @@
 // EXOBYTECHNOVA UPD: Phoenix Collective medkits, based off the Frontier medkits but better.
 // This is literally just a texture change if you don't use the pre-stocked versions.
 /obj/item/storage/medkit/frontier/phoenix
-	name = "phoenix collective medical kit"
+	name = "phoenix collective standard medical kit"
 	desc = "A roll-top waterproof medkit, intended for usage by Phoenix Collective imperials. Its polysilicate fabrics are woven in a way that makes it resilient to \
 		the environment of unexplored Frontier worlds, while still preserving a lightweight easy-to-carry profile. It has a clip for hooking onto your belt."
 	icon_state = "phoenix"
@@ -192,6 +192,22 @@
 		/obj/item/reagent_containers/hypospray/medipen/penacid = 3,
 		/obj/item/reagent_containers/cup/bottle/syriniver = 2,
 		/obj/item/reagent_containers/hypospray/medipen/deforest/meridine = 2,
+	)
+	generate_items_inside(items_inside,src)
+
+/obj/item/storage/medkit/frontier/phoenix/oxygen
+	name = "phoenix collective oxygen treatment kit"
+	desc = "A waterproof oxygen deprivation treatment kit, intended for usage by Phoenix Collective imperials. Although resuscitation methods such as CPR exist, sometimes \
+		you don't have time in hostile environments; hence, this package existing. The medkit has a clip for hooking onto your belt."
+	icon_state = "phoenix_tox"
+
+/obj/item/storage/medkit/frontier/phoenix/oxygen/stocked
+
+/obj/item/storage/medkit/frontier/phoenix/oxygen/stocked/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/reagent_containers/cup/beaker/meta/salbutamol = 4,
+		/obj/item/reagent_containers/hypospray/medipen = 2,
+		/obj/item/storage/pill_bottle/iron = 1,
 	)
 	generate_items_inside(items_inside,src)
 // EXOBYTECHNOVA UPD END
