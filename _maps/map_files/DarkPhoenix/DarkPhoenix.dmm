@@ -316,7 +316,7 @@
 "LG" = (/obj/machinery/vending/imported/tiziran,/turf/open/floor/iron/dark,/area/space)
 "LI" = (/obj/structure/window/reinforced/plasma/spawner/directional/west,/turf/open/floor/engine,/area/space)
 "LM" = (/obj/machinery/light/blacklight/directional/east,/turf/open/floor/iron/dark/diagonal,/area/space)
-"LP" = (/obj/machinery/computer/station_alert/station_only,/obj/effect/turf_decal/tile/yellow/half/contrasted{dir = 4},/obj/machinery/camera/emp_proof/directional/north,/turf/open/floor/iron/dark,/area/space)
+"LP" = (/obj/effect/turf_decal/tile/yellow/half/contrasted{dir = 4},/obj/machinery/camera/emp_proof/directional/north,/obj/machinery/computer/station_alert,/turf/open/floor/iron/dark,/area/space)
 "LT" = (/obj/machinery/computer/records/medical,/obj/effect/turf_decal/tile/green/half/contrasted,/turf/open/floor/iron/dark,/area/space)
 "Ma" = (/obj/machinery/light/blacklight/directional/north,/obj/effect/turf_decal/stripes/white/line{dir = 4},/obj/effect/turf_decal/stripes/white/line{dir = 8},/turf/open/floor/iron/dark/smooth_half{dir = 1},/area/space)
 "Md" = (/obj/effect/turf_decal/tile/dark_blue/half/contrasted,/turf/open/floor/iron/dark/side{dir = 1},/area/space)
