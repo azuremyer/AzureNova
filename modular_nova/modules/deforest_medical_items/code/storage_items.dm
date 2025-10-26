@@ -182,7 +182,7 @@
 /obj/item/storage/medkit/frontier/phoenix/toxin
 	name = "phoenix collective toxin treatment kit"
 	desc = "A waterproof toxin treatment kit, intended for usage by Phoenix Collective imperials. While toxins are notoriously difficult to treat, the Phoenix Collective \
-		has done their best to make the materials needed to treat it as readily available as possible. The medkit has a clip for hooking onto your belt."
+		has done their best to make the materials needed to treat it as readily available as possible. It has a clip for hooking onto your belt."
 	icon_state = "phoenix_tox"
 
 /obj/item/storage/medkit/frontier/phoenix/toxin/stocked
@@ -190,7 +190,7 @@
 /obj/item/storage/medkit/frontier/phoenix/toxin/stocked/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/reagent_containers/hypospray/medipen/penacid = 3,
-		/obj/item/reagent_containers/cup/bottle/syriniver = 2,
+		/obj/item/reagent_containers/syringe/syriniver = 2,
 		/obj/item/reagent_containers/hypospray/medipen/deforest/meridine = 2,
 	)
 	generate_items_inside(items_inside,src)
@@ -198,14 +198,14 @@
 /obj/item/storage/medkit/frontier/phoenix/oxygen
 	name = "phoenix collective oxygen treatment kit"
 	desc = "A waterproof oxygen deprivation treatment kit, intended for usage by Phoenix Collective imperials. Although resuscitation methods such as CPR exist, sometimes \
-		you don't have time in hostile environments; hence, this package existing. The medkit has a clip for hooking onto your belt."
+		you don't have time in hostile environments; hence, this package existing. It has a clip for hooking onto your belt."
 	icon_state = "phoenix_tox"
 
 /obj/item/storage/medkit/frontier/phoenix/oxygen/stocked
 
 /obj/item/storage/medkit/frontier/phoenix/oxygen/stocked/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/reagent_containers/cup/beaker/meta/salbutamol = 4,
+		/obj/item/reagent_containers/hypospray/medipen/salbutamol = 4,
 		/obj/item/reagent_containers/hypospray/medipen = 2,
 		/obj/item/storage/pill_bottle/iron = 1,
 	)
