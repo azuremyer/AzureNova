@@ -47,17 +47,17 @@ CRYO_MIN_SSD_TIME 15
 #LOG_SUBTLER
 
 ## Enables autotransfer system
-#AUTOTRANSFER
+AUTOTRANSFER
 
 ## Enables starting transfer votes by the crew at large.
 #ALLOW_VOTE_TRANSFER
 
-## autovote initial delay (deciseconds in real time) before first automatic transfer vote call (default 120 minutes)
+## autovote initial delay (deciseconds in real time) before first automatic transfer vote call (default 120 minutes) (now 240)
 ## Set to 0 to disable the subsystem altogether.
-VOTE_AUTOTRANSFER_INITIAL 72000
+VOTE_AUTOTRANSFER_INITIAL 144000
 
-## autovote delay (deciseconds in real time) before sequential automatic transfer votes are called (default 30 minutes)
-VOTE_AUTOTRANSFER_INTERVAL 18000
+## autovote delay (deciseconds in real time) before sequential automatic transfer votes are called (default 30 minutes) (now 120)
+VOTE_AUTOTRANSFER_INTERVAL 72000
 
 ## autovote maximum votes until automatic transfer call. (default 4)
 ## Set to 0 to force automatic crew transfer after the 'vote_autotransfer_initial' elapsed.
@@ -96,9 +96,9 @@ SSDECAY_DISABLED
 SSDECAY_DISABLE_NESTS
 
 ## Disables any ERP preferences for codebases that don't want it.
-#DISABLE_ERP_PREFERENCES
-#DISABLE_LEWD_ITEMS
-#ERP_EMOTES_TO_DISABLE cum
+DISABLE_ERP_PREFERENCES
+DISABLE_LEWD_ITEMS
+ERP_EMOTES_TO_DISABLE cum
 
 ## Disables mismatched parts for codebases that don't want it.
 #DISABLE_MISMATCHED_PARTS
@@ -113,7 +113,7 @@ EVENT_FREQUENCY_UPPER 8400
 EVENT_FREQUENCY_LOWER 4200
 
 ## Ticket ping frequency. Set 0 for disable that subsystem. 3000 - 5 minutes, 600 - 1 minute.
-TICKET_PING_FREQUENCY 0
+TICKET_PING_FREQUENCY 3000
 
 ## Minimum alert level for pods to actually evacuate people
 MINIMUM_ALERT_FOR_PODS 0
@@ -142,7 +142,7 @@ SIZE_COLLAR_MAXIMUM 400
 SIZE_COLLAR_MINIMUM 15
 
 ## Uncomment to enable minimum flavor text requirements for joining the round
-#MIN_FLAVOR_TEXT
+# MIN_FLAVOR_TEXT
 
 ## Minimum flavor text number needed to enter the game
 ## YOU MUST HAVE MIN_FLAVOR_TEXT ENABLED FOR THIS TO WORK.
@@ -170,7 +170,7 @@ REPLACE_SECBELT_FLASHBANGS_WITH_BOLA
 #BORG_GATEWAY_BLACKLIST
 
 ## Uncomment to make flashbangs forbidden during green alerts
-#FLASHBANGS_FORBIDDEN_DURING_GREEN
+FLASHBANGS_FORBIDDEN_DURING_GREEN
 
 ## The ruin budget for SerenityStation's upper z-level.
 JUNGLE_BUDGET 2
