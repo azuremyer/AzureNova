@@ -159,6 +159,19 @@
 	)
 	generate_items_inside(items_inside,src)
 
+// EXOBYTECH UPD: Pre-packed Frontier medkit, Phoenix Collective version
+/obj/item/storage/medkit/frontier/stocked/phoenix
+
+/obj/item/storage/medkit/frontier/stocked/phoenix/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/stack/medical/suture/bloody = 2,
+		/obj/item/stack/medical/mesh/advanced = 2,
+		/obj/item/reagent_containers/hypospray/combat/nanites = 1,
+		/obj/item/reagent_containers/hypospray/medipen/deforest/calopine = 1,
+		/obj/item/stack/medical/gauze/twelve = 1,
+	)
+	generate_items_inside(items_inside,src)
+
 // Pre-packed combat surgeon medkit, with items for fixing more specific injuries and wounds
 /obj/item/storage/medkit/combat_surgeon
 	name = "combat surgeon medical kit"

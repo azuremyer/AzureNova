@@ -305,7 +305,7 @@
 	desc = "A pair of powerful hydraulic arms installed in a MODsuit."
 	icon_state = "launch_loader"
 	module_type = MODULE_ACTIVE
-	removable = FALSE
+	complexity = 1
 	use_energy_cost = DEFAULT_CHARGE_DRAIN*10
 	incompatible_modules = list(/obj/item/mod/module/hydraulic)
 	cooldown_time = 4 SECONDS
@@ -395,7 +395,7 @@
 	desc = "A powerful hydraulic electromagnet able to launch crates and lockers towards the user, and keep 'em attached."
 	icon_state = "magnet_loader"
 	module_type = MODULE_ACTIVE
-	removable = FALSE
+	complexity = 1
 	use_energy_cost = DEFAULT_CHARGE_DRAIN * 3
 	incompatible_modules = list(/obj/item/mod/module/magnet)
 	cooldown_time = 1.5 SECONDS
@@ -571,7 +571,7 @@
 		The sphere can move quickly, even through lava, and launch mining bombs to decimate terrain."
 	icon_state = "sphere"
 	module_type = MODULE_ACTIVE
-	removable = FALSE
+	complexity = 2
 	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.5
 	use_energy_cost = DEFAULT_CHARGE_DRAIN * 3
 	incompatible_modules = list(/obj/item/mod/module/sphere_transform)

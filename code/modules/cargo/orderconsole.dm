@@ -181,6 +181,11 @@
 		if(pack.contraband && !contraband)
 			continue
 
+		// EXOBYTECH UPD: Disable lewd items
+		if(CONFIG_GET(flag/disable_lewd_items) && pack.lewd)
+			continue
+		// EXOBYTECH UPD END
+
 		var/obj/item/first_item = length(pack.contains) > 0 ? pack.contains[1] : null
 		packs += list(list(
 			"name" = pack.name,

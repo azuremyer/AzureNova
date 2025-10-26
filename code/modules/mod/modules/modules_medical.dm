@@ -285,7 +285,7 @@
 		But when it came time to provide their operatives with usable medical equipment, they didn't hesitate to remove \
 		those in-built safeties. Operatives in the field can benefit from what they dub as 'Stun Gloves', able to apply shocks \
 		straight to a victims heart to disable them, or maybe even outright stop their heart with enough power."
-	complexity = 1
+	complexity = 2
 	module_type = MODULE_ACTIVE
 	overlay_state_inactive = "module_defibrillator_combat"
 	overlay_state_active = "module_defibrillator_combat_active"
@@ -312,7 +312,7 @@
 		brand-name fashion being marred."
 	icon_state = "thread_ripper"
 	module_type = MODULE_ACTIVE
-	complexity = 2
+	complexity = 1
 	use_energy_cost = DEFAULT_CHARGE_DRAIN
 	incompatible_modules = list(/obj/item/mod/module/thread_ripper)
 	cooldown_time = 1.5 SECONDS
@@ -386,7 +386,7 @@
 		perform advanced surgeries on the go."
 	icon_state = "surgical_processor"
 	module_type = MODULE_ACTIVE
-	complexity = 2
+	complexity = 1
 	active_power_cost = DEFAULT_CHARGE_DRAIN
 	device = /obj/item/surgical_processor/mod
 	incompatible_modules = list(/obj/item/mod/module/surgical_processor)

@@ -149,3 +149,10 @@
 	glow_color = null
 	rubble_type = RUBBLE_NONE
 	id = "seethrough"
+
+/datum/pod_style/arcanum
+	name = "arcanum"
+	ui_name = "Arcanum"
+	desc = "A drop pod used by Arcanum Research Corporation. Take care not to scratch its contents..."
+	decal_icon = "arcanum"
+	id = "arcanum"

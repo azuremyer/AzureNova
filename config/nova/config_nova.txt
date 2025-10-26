@@ -65,7 +65,7 @@ VOTE_AUTOTRANSFER_INTERVAL 72000
 VOTE_AUTOTRANSFER_MAXIMUM 4
 
 ## Policy for what people remember after dying and being brought back to life
-BLACKOUTPOLICY You remember nothing after you've blacked out and you do not remember who or what events killed you, however, you can have faint recollection of what led up to it.
+BLACKOUTPOLICY You remember nothing after you blacked out and you do not remember who or what events killed you. However, you can have faint recollection of what led up to it.
 
 ## Combat indicator, comment out to disable it
 COMBAT_INDICATOR
@@ -191,7 +191,7 @@ SHOW_JOB_ESTIMATION
 ## Message that gets displayed to non-whitelisted players when they try to join the server
 ## while it has an active whitelist. The \n allows the message to be displayed on a separate line,
 ## to make it more readable in the BYOND window.
-MISSING_WHITELIST_MESSAGE "\nThis server requires you to be whitelisted in order to be allowed to play. Apply on our Discord by simply filling the Access Request form from the #application-instructions channel under the 'Landing Zone' category. Here's the invite link: https://discord.gg/novasector"
+MISSING_WHITELIST_MESSAGE "\nThis server requires you to be whitelisted in order to be allowed to play. Please contact a friend who has access, or contact the server administrators, for help connecting."
 
 #If enabled, /human mobs will no longer occasionally blink
 #DISABLE_BLINKING

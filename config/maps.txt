@@ -87,3 +87,8 @@ endmap
 map snowglobe
 	votable
 endmap
+
+## EXONOVA MAPS ##
+map darkphoenix
+	disabled
+endmap

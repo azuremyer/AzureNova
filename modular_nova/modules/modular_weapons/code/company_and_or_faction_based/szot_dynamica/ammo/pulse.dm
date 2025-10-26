@@ -118,6 +118,16 @@
 		if(0.1 to 0.3)
 			. += "zaibas_bullet_1"
 
+/obj/item/ammo_casing/pulse/extended
+	name = "extended pulse energy cell"
+	desc = "A reusable energy cell for pulse weapons. This one has an upgraded and extended power capacity."
+	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*0.4, /datum/material/plasma = SHEET_MATERIAL_AMOUNT*2.5, /datum/material/gold = SHEET_MATERIAL_AMOUNT*0.9)
+	projectile_type = /obj/projectile/beam/laser/plasma_glob/pulse/phoenix
+	///Maximum amount of times this casing can be used.
+	max_uses = 30
+	///Current amount of times this casing can be used.
+	remaining_uses = 30
+
 /obj/projectile/beam/laser/plasma_glob/pulse
 	name = "pulse energy"
 	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/szot_dynamica/ammo.dmi'
@@ -129,6 +139,14 @@
 	light_range = 1
 	light_color = LIGHT_COLOR_PURPLE
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/purple_laser
+
+/obj/projectile/beam/laser/plasma_glob/pulse/phoenix
+	/// EXOBYTECHNOVA CHANGE: High-speed version of the plasma pulse projectile, slightly reduced damage
+	name = "phoenix pulse energy"
+	icon = 'modular_nova/modules/modular_weapons/icons/obj/company_and_or_faction_based/szot_dynamica/ammo.dmi'
+	icon_state = "plasma_pulse"
+	damage = 15
+	speed = 2
 
 /obj/projectile/beam/laser/plasma_glob/pulse/on_hit(atom/target, blocked, pierce_hit)
 	. = ..()

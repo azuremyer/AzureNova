@@ -681,6 +681,12 @@ GLOBAL_LIST_INIT(cardboard_recipes, list ( \
 		new /datum/stack_recipe("PDA box", /obj/item/storage/box/pdas, crafting_flags = NONE, category = CAT_CONTAINERS), \
 		null, \
 
+		new /datum/stack_recipe("regenerative core box", /obj/item/storage/box/regencore, crafting_flags = NONE, category = CAT_CONTAINERS), \
+		new /datum/stack_recipe("anomaly neutralizer box", /obj/item/storage/box/anomalyneut, crafting_flags = NONE, category = CAT_CONTAINERS), \
+		new /datum/stack_recipe("cable coil box", /obj/item/storage/box/cables, crafting_flags = NONE, category = CAT_CONTAINERS), \
+		new /datum/stack_recipe("power cell box", /obj/item/storage/box/powercells, crafting_flags = NONE, category = CAT_CONTAINERS), \
+		null, \
+
 		new /datum/stack_recipe("pillbottle box", /obj/item/storage/box/pillbottles, crafting_flags = NONE, category = CAT_CONTAINERS), \
 		new /datum/stack_recipe("medical gels box", /obj/item/storage/box/medigels, crafting_flags = NONE, category = CAT_CONTAINERS), \
 		new /datum/stack_recipe("beaker box", /obj/item/storage/box/beakers, crafting_flags = NONE, category = CAT_CONTAINERS), \

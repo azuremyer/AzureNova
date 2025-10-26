@@ -45,6 +45,16 @@
 	end_sound = 'sound/machines/generator/generator_end.ogg'
 	volume = 40
 
+/datum/looping_sound/generator/antimatter
+	start_sound = 'sound/machines/generator/antimatter/generator_start.ogg'
+	start_length = 7.0 SECONDS
+	mid_sounds = list(
+		'sound/machines/generator/antimatter/generator_mid2.ogg',
+	)
+	mid_length = 2.8 SECONDS
+	end_sound = 'sound/machines/generator/antimatter/generator_end.ogg'
+	volume = 40
+
 /datum/looping_sound/deep_fryer
 	start_sound = 'sound/machines/fryer/deep_fryer_immerse.ogg' //my immersions
 	start_length = 1 SECONDS

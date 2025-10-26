@@ -46,7 +46,7 @@ Edit =
 
 Name = Admin Candidate
 Include = @ SPAWN VAREDIT BAN
-Exclude =
+Exclude = AUTOADMIN
 Edit =
 
 Name = Trial Admin

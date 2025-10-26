@@ -1,5 +1,21 @@
 <!-- Most valid html will work in here, but you have to use URL links for images. -->
 
-<h1>Welcome to Space Station 13!</h1>
-
-<i>This server is running a /tg/station 13 Git build.</i>
+<h1>
+	Welcome to&nbsp;Exobytech Station 13!
+</h1>
+<p>
+	<span style="color: #ff0000;">
+		<em>
+			 Please ask the server admins to change this default MOTD to something more useful!
+		</em>
+	</span>
+</p>
+<p>
+	<em>
+		This server is running ExobytechNova ver. indev 0.5.0 created by N0tG00b3r, using the work of KevinGlitch as a base. You can report bugs on GitHub
+		<a href="https://github.com/N0tG00b3r/ExobytechNova/issues">
+			 here
+		</a>
+		. Enjoy your stay.
+	</em>
+</p>

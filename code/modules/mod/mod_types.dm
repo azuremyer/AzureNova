@@ -369,6 +369,88 @@
 	. = ..()
 	ADD_TRAIT(src, TRAIT_CONTRABAND_BLOCKER, INNATE_TRAIT)
 
+/obj/item/mod/control/pre_equipped/elite
+	theme = /datum/mod_theme/elite
+	starting_frequency = MODLINK_FREQ_SYNDICATE
+	applied_cell = /obj/item/stock_parts/power_store/cell/bluespace
+	req_access = list(ACCESS_SYNDICATE)
+	applied_modules = list(
+		/obj/item/mod/module/storage/syndicate,
+		/obj/item/mod/module/shock_absorber,
+		/obj/item/mod/module/emp_shield,
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/jump_jet,
+		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/hat_stabilizer/syndicate,
+		/obj/item/mod/module/quick_cuff,
+	)
+	default_pins = list(
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/jump_jet,
+	)
+
+// EXOBYTECHNOVA UPD: Phoenix Collective MOD suit types.
+/obj/item/mod/control/pre_equipped/phoenix
+	theme = /datum/mod_theme/phoenix
+	starting_frequency = MODLINK_FREQ_NANOTRASEN
+	applied_cell = /obj/item/stock_parts/power_store/cell/infinite/nif_cell
+	applied_modules = list(
+		/obj/item/mod/module/storage/bluespace,
+		/obj/item/mod/module/emp_shield/advanced,
+		/obj/item/mod/module/jetpack/advanced,
+		/obj/item/mod/module/flashlight,
+		/obj/item/mod/module/status_readout,
+		/obj/item/mod/module/dna_lock,
+		/obj/item/mod/module/longfall,
+		/obj/item/mod/module/noslip,
+		/obj/item/mod/module/gps,
+	)
+	default_pins = list(
+		/obj/item/mod/module/jetpack/advanced,
+	)
+	/// Copy/pasted from the Responsory modsuits.
+	/// The insignia type, insignias show what sort of member of the ERT you're dealing with.
+	var/insignia_type
+	/// Additional module (or modules if list) we add, as a treat.
+	var/additional_modules
+
+/obj/item/mod/control/pre_equipped/phoenix/Initialize(mapload, new_theme, new_skin, new_core)
+	if(insignia_type)
+		applied_modules.Insert(1, insignia_type)
+	if(additional_modules)
+		applied_modules += additional_modules
+		default_pins += additional_modules
+	return ..()
+
+/obj/item/mod/control/pre_equipped/phoenix/engineer
+	insignia_type = /obj/item/mod/module/insignia/engineer
+	additional_modules = list(
+		/obj/item/mod/module/magboot/advanced,
+		/obj/item/mod/module/rad_protection,
+		/obj/item/mod/module/headprotector,
+	)
+
+/obj/item/mod/control/pre_equipped/phoenix/medical
+	insignia_type = /obj/item/mod/module/insignia/medic
+	additional_modules = list(
+		/obj/item/mod/module/health_analyzer,
+		/obj/item/mod/module/quick_carry,
+		/obj/item/mod/module/injector,
+		/obj/item/mod/module/criminalcapture/patienttransport,
+		/obj/item/mod/module/thread_ripper,
+	)
+
+/obj/item/mod/control/pre_equipped/phoenix/security
+	insignia_type = /obj/item/mod/module/insignia/security
+	additional_modules = list(
+		/obj/item/mod/module/magnetic_harness,
+		/obj/item/mod/module/criminalcapture,
+		/obj/item/mod/module/rad_protection,
+		/obj/item/mod/module/headprotector,
+	)
+// EXOBYTECHNOVA UPDATE END
+
 /obj/item/mod/control/pre_equipped/interdyne
 	theme = /datum/mod_theme/interdyne
 	starting_frequency = MODLINK_FREQ_SYNDICATE
@@ -666,6 +748,10 @@
 
 /obj/item/mod/control/pre_equipped/empty/elite
 	theme = /datum/mod_theme/elite
+
+// EXOBYTECHNOVA UPD: Phoenix modsuit
+/obj/item/mod/control/pre_equipped/empty/phoenix
+	theme = /datum/mod_theme/phoenix
 
 /obj/item/mod/control/pre_equipped/empty/ninja
 	theme = /datum/mod_theme/ninja
