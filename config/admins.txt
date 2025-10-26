@@ -9,4 +9,3 @@ RealNiko = Host
 Wreckerlollol = Game Master
 Nazaki W. = Game Master
 MunkoMonkey = Game Master
-Kiwidudefruit = Trial Admin
