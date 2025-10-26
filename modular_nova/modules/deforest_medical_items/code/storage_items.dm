@@ -199,7 +199,7 @@
 	name = "phoenix collective oxygen treatment kit"
 	desc = "A waterproof oxygen deprivation treatment kit, intended for usage by Phoenix Collective imperials. Although resuscitation methods such as CPR exist, sometimes \
 		you don't have time in hostile environments; hence, this package existing. It has a clip for hooking onto your belt."
-	icon_state = "phoenix_tox"
+	icon_state = "phoenix_oxy"
 
 /obj/item/storage/medkit/frontier/phoenix/oxygen/stocked
 
