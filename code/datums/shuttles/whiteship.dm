@@ -51,6 +51,11 @@
 	name = "Personal Travel Shuttle"
 	description = "A small vessel with a few zombies and an engineer's corpse that can be looted."
 
+/datum/map_template/shuttle/whiteship/personalshuttle
+	suffix = "personalshuttle_phoenix"
+	name = "Phoenix Collective Shuttle"
+	description = "Phoenix Collective retrofitted and upgraded version of the Personal Travel Shuttle. You really shouldn't spawn this for non-admins."
+
 /datum/map_template/shuttle/whiteship/obelisk
 	suffix = "obelisk"
 	name = "Obelisk"
