@@ -54,7 +54,8 @@
 /datum/map_template/shuttle/whiteship/personalshuttle_phoenix
 	suffix = "personalshuttle_phoenix"
 	name = "Phoenix Collective Shuttle"
-	description = "Phoenix Collective retrofitted and upgraded version of the Personal Travel Shuttle. You really shouldn't spawn this for non-admins."
+	description = "A retrofitted and upgraded version of the Personal Travel Shuttle, utilized by Phoenix Collective crews."
+	admin_notes = "Has super fucking overpowered shit, you really shouldn't spawn this for non-admins."
 
 /datum/map_template/shuttle/whiteship/obelisk
 	suffix = "obelisk"
