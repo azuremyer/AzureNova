@@ -37,3 +37,7 @@
 /datum/map_template/shuttle/arrival/nebula
 	suffix = "nebula"
 	name = "arrival shuttle (Nebula)"
+
+/datum/map_template/shuttle/arrival/darkphoenix
+	suffix = "darkphoenix"
+	name = "arrival shuttle (DarkPhoenix)"
