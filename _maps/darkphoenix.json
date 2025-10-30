@@ -6,9 +6,24 @@
 	"shuttles": {
 		"cargo": "cargo_nova",
 		"ferry": "ferry_nova",
-		"emergency": "emergency_nova"
 		"whiteship": "whiteship_meta",
+		"emergency": "emergency_nova"
 	},
+	"traits": [
+		{
+			"Linkage": "Cross",
+			"No Parallax": true,
+			"Up": false,
+			"Down": false
+		},
+		{
+			"Linkage": "Cross",
+			"Gravity": true,
+			"No Parallax": true,
+			"Up": false,
+			"Down": false
+		}
+	],
 	"job_changes": {
 		"Cook": {
 			"additional_cqc_areas": [
