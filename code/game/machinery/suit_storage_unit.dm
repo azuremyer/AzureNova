@@ -193,6 +193,9 @@
 /obj/machinery/suit_storage_unit/phoenix/medical
 	mod_type = /obj/item/mod/control/pre_equipped/phoenix/medical
 
+/obj/machinery/suit_storage_unit/phoenix/medical/surgical
+	mod_type = /obj/item/mod/control/pre_equipped/phoenix/medical/surgical
+
 /obj/machinery/suit_storage_unit/phoenix/security
 	mod_type = /obj/item/mod/control/pre_equipped/phoenix/security
 
