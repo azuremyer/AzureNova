@@ -33,7 +33,7 @@
 	if(active_disease.totalStealth() >= 3)
 		suppress_warning = TRUE
 
-/datum/symptom/bimbo/on_stage_change(datum/disease/advance/advanced_disease)
+/datum/symptom/bimbo/Activate(datum/disease/advance/advanced_disease)
 	. = ..()
 	if(!.)
 		return
