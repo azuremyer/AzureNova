@@ -20,9 +20,10 @@
 
 /datum/reagent/drug/aphrodisiac/camphor/pentacamphor/overdose_start(mob/living/carbon/human/exposed_mob)
 	if(HAS_TRAIT(exposed_mob, TRAIT_BIMBO))
-		exposed_mob.cure_trauma_type(/datum/brain_trauma/very_special/bimbo, TRAUMA_RESILIENCE_ABSOLUTE)
-		to_chat(exposed_mob, span_notice("Your mind is free. Your thoughts are pure and innocent once more."))
-		REMOVE_TRAIT(exposed_mob, TRAIT_BIMBO, TRAIT_LEWDCHEM)
+		if(HAS_TRAIT_NOT_FROM(exposed_mob, TRAIT_BIMBO, TRAIT_LEWDCHEM_RETROVIRUS))
+			exposed_mob.cure_trauma_type(/datum/brain_trauma/very_special/bimbo, TRAUMA_RESILIENCE_ABSOLUTE)
+			to_chat(exposed_mob, span_notice("Your mind is free. Your thoughts are pure and innocent once more."))
+			REMOVE_TRAIT(exposed_mob, TRAIT_BIMBO, TRAIT_LEWDCHEM)
 		return
 	if(!HAS_TRAIT(exposed_mob, TRAIT_NEVERBONER))
 		to_chat(exposed_mob, span_notice("You feel like you'll never feel aroused again..."))

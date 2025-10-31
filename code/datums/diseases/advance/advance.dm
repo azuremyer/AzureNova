@@ -32,8 +32,11 @@
 	var/processing = FALSE
 	var/mutable = TRUE //set to FALSE to prevent most in-game methods of altering the disease via virology
 	var/oldres //To prevent setting new cures unless resistance changes.
+	var/hardcoded_adv_transmission // When set, prevents the disease spread method from being changed post-init. Useful only for preset diseases. Or admin abuse.
 
 	///Lists of cures and how hard we expect them to be to cure. Sentient diseases will pick two from 6+
+	///If "hardcoded_adv_cure" is set then it will bypass all cure generation random-ness
+	var/hardcoded_adv_cure
 	var/static/list/advance_cures = list(
 		list( // level 1
 			/datum/reagent/carbon,
@@ -276,14 +279,17 @@
 		else
 			visibility_flags &= ~HIDDEN_SCANNER
 
-		if(properties["transmittable"] >= 11)
-			set_spread(DISEASE_SPREAD_AIRBORNE)
-		else if(properties["transmittable"] >= 7)
-			set_spread(DISEASE_SPREAD_CONTACT_SKIN)
-		else if(properties["transmittable"] >= 3)
-			set_spread(DISEASE_SPREAD_CONTACT_FLUIDS)
+		if(hardcoded_adv_transmission)
+			set_spread(hardcoded_adv_transmission)
 		else
-			set_spread(DISEASE_SPREAD_BLOOD)
+			if(properties["transmittable"] >= 11)
+				set_spread(DISEASE_SPREAD_AIRBORNE)
+			else if(properties["transmittable"] >= 7)
+				set_spread(DISEASE_SPREAD_CONTACT_SKIN)
+			else if(properties["transmittable"] >= 3)
+				set_spread(DISEASE_SPREAD_CONTACT_FLUIDS)
+			else
+				set_spread(DISEASE_SPREAD_BLOOD)
 
 		spreading_modifier = max(CEILING(0.4 * properties["transmittable"], 1), 1)
 		cure_chance = clamp(7.5 - (0.5 * properties["resistance"]), 1, 10) // can be between 1 and 10
@@ -341,11 +347,14 @@
 // Will generate a random cure, the more resistance the symptoms have, the harder the cure.
 /datum/disease/advance/proc/generate_cure()
 	if(properties?.len)
-		var/res = clamp(properties["resistance"] - (symptoms.len / 2), 1, advance_cures.len)
-		if(res == oldres)
-			return
-		cures = list(pick(advance_cures[res]))
-		oldres = res
+		if(hardcoded_adv_cure)
+			cures = hardcoded_adv_cure
+		else
+			var/res = clamp(properties["resistance"] - (symptoms.len / 2), 1, advance_cures.len)
+			if(res == oldres)
+				return
+			cures = list(pick(advance_cures[res]))
+			oldres = res
 		// Get the cure name from the cure_id
 		var/datum/reagent/D = GLOB.chemical_reagents_list[cures[1]]
 		cure_text = D.name

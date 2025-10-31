@@ -164,6 +164,7 @@
 #define TRAIT_LEWDQUIRK "lewdquirks"
 ///traits gained by chemicals, you get the idea
 #define TRAIT_LEWDCHEM "lewdchem"
+#define TRAIT_LEWDCHEM_RETROVIRUS "edenretrovirus" // EXOBYTECHNOVA UPD: 3d3n retrovirus version of this source
 
 #define TRAIT_STRAPON "strapon"
 

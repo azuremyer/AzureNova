@@ -21,7 +21,7 @@
  * Tremendous buff for stage speed
  * Greatly increases transmissibility
  *
- * Bonus: Buffs transmission and speed. Extremely useful for buffing viruse*
+ * Bonus: Buffs transmission and speed. Extremely useful for buffing viruses
 */
 /datum/symptom/viralevolution
 	name = "Viral evolutionary acceleration"
