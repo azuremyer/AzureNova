@@ -18,7 +18,7 @@
 
 // 3D3N Retrovirus, this is a VERY dangerous and finicky one to use
 /datum/disease/advance/edenretro
-	copy_type = /datum/disease/advance
+	copy_type = /datum/disease/advance/edenretro // Have to do this because otherwise it screws with the hardcoded cure/transmission.
 
 /datum/disease/advance/edenretro/New()
 	name = "3D3N Retrovirus"

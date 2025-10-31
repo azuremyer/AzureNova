@@ -23,6 +23,7 @@
 	threshold_descs = list(
 		"Stealth 3" = "The symptom remains hidden until active.",
 	)
+	naturally_occuring = FALSE
 	var/erp_pref_datum = /datum/preference/toggle/erp/bimbofication
 
 /datum/symptom/bimbo/Start(datum/disease/advance/active_disease)
@@ -36,11 +37,9 @@
 	. = ..()
 	if(!.)
 		return
-
 	var/mob/living/affected_mob = advanced_disease.affected_mob
-	if(!(affected_mob.client?.prefs.read_preference(erp_pref_datum)) || !(ishuman(affected_mob)))
+	if(!affected_mob.client?.prefs.read_preference(erp_pref_datum) || !ishuman(affected_mob))
 		return
-
 	var/obj/item/organ/brain/affected_brain = affected_mob.get_organ_slot(ORGAN_SLOT_BRAIN)
 	switch(advanced_disease.stage && affected_brain)
 		if(1, 2, 3)
@@ -48,7 +47,7 @@
 				affected_brain.cure_trauma_type(/datum/brain_trauma/very_special/bimbo/retrovirus, TRAUMA_RESILIENCE_ABSOLUTE)
 				to_chat(affected_mob, span_notice("Your mind is free. Your thoughts are pure and innocent once more."))
 			else if(!suppress_warning)
-				affected_mob.emote("twitch_s")
+				affected_mob.emote("twitch_s", forced = TRUE)
 			return
 		else
 			if(!HAS_TRAIT_FROM(affected_mob, TRAIT_BIMBO, TRAIT_LEWDCHEM_RETROVIRUS))
