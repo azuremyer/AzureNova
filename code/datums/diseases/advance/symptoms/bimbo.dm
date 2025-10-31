@@ -24,13 +24,22 @@
 		"Stealth 3" = "The symptom remains hidden until active.",
 	)
 	naturally_occuring = FALSE
+	/// ERP preference references
 	var/erp_pref_datum = /datum/preference/toggle/erp/bimbofication
+	var/host_has_pref = FALSE
+	/// Warning signs
+	var/heat_messages = list(
+		"You feel a strange warmth.",
+		"Your breath feels hotter for a moment.",
+		"You feel your heart flutter.",
+		"Your clothes feel... tighter?"
+	)
 
-/datum/symptom/bimbo/Start(datum/disease/advance/active_disease)
+/datum/symptom/bimbo/Start(datum/disease/advance/advanced_disease)
 	. = ..()
 	if(!.)
 		return
-	if(active_disease.totalStealth() >= 3)
+	if(advanced_disease.totalStealth() >= 3)
 		suppress_warning = TRUE
 
 /datum/symptom/bimbo/Activate(datum/disease/advance/advanced_disease)
@@ -38,17 +47,30 @@
 	if(!.)
 		return
 	var/mob/living/affected_mob = advanced_disease.affected_mob
-	if(!affected_mob.client?.prefs.read_preference(erp_pref_datum) || !ishuman(affected_mob))
+	host_has_pref = affected_mob.client?.prefs.read_preference(erp_pref_datum)
+	if(!host_has_pref || !ishuman(affected_mob))
 		return
 	var/obj/item/organ/brain/affected_brain = affected_mob.get_organ_slot(ORGAN_SLOT_BRAIN)
-	switch(advanced_disease.stage && affected_brain)
+	if (!affected_brain)
+		return
+	switch(advanced_disease.stage)
 		if(1, 2, 3)
 			if(HAS_TRAIT_FROM(affected_mob, TRAIT_BIMBO, TRAIT_LEWDCHEM_RETROVIRUS))
 				affected_brain.cure_trauma_type(/datum/brain_trauma/very_special/bimbo/retrovirus, TRAUMA_RESILIENCE_ABSOLUTE)
 				to_chat(affected_mob, span_notice("Your mind is free. Your thoughts are pure and innocent once more."))
-			else if(!suppress_warning)
-				affected_mob.emote("twitch_s", forced = TRUE)
+			else if(prob(base_message_chance) && !suppress_warning)
+				to_chat(affected_mob, span_purple("[pick(heat_messages)]"))
 			return
 		else
 			if(!HAS_TRAIT_FROM(affected_mob, TRAIT_BIMBO, TRAIT_LEWDCHEM_RETROVIRUS))
 				affected_brain.gain_trauma(/datum/brain_trauma/very_special/bimbo/retrovirus, TRAUMA_RESILIENCE_ABSOLUTE)
+
+/datum/symptom/bimbo/End(datum/disease/advance/advanced_disease)
+	. = ..()
+	var/mob/living/affected_mob = advanced_disease.affected_mob
+	var/obj/item/organ/brain/affected_brain = affected_mob.get_organ_slot(ORGAN_SLOT_BRAIN)
+	if (!affected_brain)
+		return
+	if(HAS_TRAIT_FROM(affected_mob, TRAIT_BIMBO, TRAIT_LEWDCHEM_RETROVIRUS))
+		affected_brain.cure_trauma_type(/datum/brain_trauma/very_special/bimbo/retrovirus, TRAUMA_RESILIENCE_ABSOLUTE)
+		to_chat(affected_mob, span_notice("Your mind is free. Your thoughts are pure and innocent once more."))
