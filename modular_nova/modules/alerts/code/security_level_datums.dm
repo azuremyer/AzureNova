@@ -142,4 +142,24 @@
 	shuttle_call_time_mod = ALERT_COEFF_NOVA
 	disables_mail = TRUE
 
+/**
+ * Black (EXOBYTECHNOVA UPD)
+ *
+ * MAPU Reactor Meltdown
+ */
+/datum/security_level/epsilon
+	name = "Epsilon"
+	name_shortform = "BLK"
+	announcement_color = "pink"
+	number_level = SEC_LEVEL_BLACK
+	status_display_icon_state = "blackalert"
+	fire_alarm_light_color = COLOR_THEME_MIDNIGHT
+	lowering_to_configuration_key = /datum/config_entry/string/alert_black_downto
+	elevating_to_configuration_key = /datum/config_entry/string/alert_black_upto
+	shuttle_call_time_mod = (ALERT_COEFF_NOVA * 0.1)
+	sound = 'modular_nova/modules/alerts/sound/security_levels/blackalert_start.ogg'
+	looping_sound = 'modular_nova/modules/alerts/sound/security_levels/xen_alarm1_lower.ogg'
+	looping_sound_interval = 4.5 SECONDS
+	disables_mail = TRUE
+
 #undef ALERT_COEFF_NOVA
