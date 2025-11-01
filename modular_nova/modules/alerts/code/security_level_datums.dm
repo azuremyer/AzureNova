@@ -145,7 +145,7 @@
 /**
  * Black (EXOBYTECHNOVA UPD)
  *
- * MAPU Reactor Meltdown
+ * MAPU Reactor Meltdown, or similar
  */
 /datum/security_level/black
 	name = "Black"
