@@ -17,7 +17,7 @@
 /datum/security_level/red
 	name = "Red"
 	sound = 'modular_nova/modules/alerts/sound/security_levels/red.ogg'
-	shuttle_call_time_mod = ALERT_COEFF_NOVA
+	shuttle_call_time_mod = (ALERT_COEFF_NOVA / 1.5)
 
 /datum/security_level/delta
 	name = "Delta"
@@ -27,7 +27,7 @@
 	sound = 'modular_nova/modules/alerts/sound/security_levels/delta.ogg'
 	looping_sound = 'modular_nova/modules/alerts/sound/misc/alarm_delta.ogg'
 	looping_sound_interval = 8 SECONDS
-	shuttle_call_time_mod = ALERT_COEFF_NOVA
+	shuttle_call_time_mod = (ALERT_COEFF_NOVA / 3)
 
 
 /**
@@ -97,7 +97,7 @@
 	fire_alarm_light_color = COLOR_BIOLUMINESCENCE_PURPLE
 	lowering_to_configuration_key = /datum/config_entry/string/alert_epsilon_downto
 	elevating_to_configuration_key = /datum/config_entry/string/alert_epsilon_upto
-	shuttle_call_time_mod = ALERT_COEFF_NOVA
+	shuttle_call_time_mod = (ALERT_COEFF_NOVA / 4)
 	sound = 'modular_nova/modules/alerts/sound/security_levels/epsilon.ogg'
 	looping_sound = 'modular_nova/modules/alerts/sound/security_levels/epsilon_loop.ogg'
 	looping_sound_interval = 15 SECONDS
@@ -117,7 +117,7 @@
 	fire_alarm_light_color = COLOR_ASSEMBLY_PURPLE
 	lowering_to_configuration_key = /datum/config_entry/string/alert_gamma_downto
 	elevating_to_configuration_key = /datum/config_entry/string/alert_gamma_upto
-	shuttle_call_time_mod = ALERT_COEFF_NOVA
+	shuttle_call_time_mod = (ALERT_COEFF_NOVA / 150)
 	sound = 'modular_nova/modules/alerts/sound/security_levels/gamma_alert.ogg'
 	looping_sound = 'modular_nova/modules/alerts/sound/security_levels/gamma_alert_vol50.ogg'
 	looping_sound_interval = 13 SECONDS
@@ -156,7 +156,7 @@
 	fire_alarm_light_color = COLOR_SECURITY_RED
 	lowering_to_configuration_key = /datum/config_entry/string/alert_black_downto
 	elevating_to_configuration_key = /datum/config_entry/string/alert_black_upto
-	shuttle_call_time_mod = (ALERT_COEFF_NOVA * 0.1)
+	shuttle_call_time_mod = (ALERT_COEFF_NOVA / 15)
 	sound = 'modular_nova/modules/alerts/sound/security_levels/blackalert_start.ogg'
 	looping_sound = 'modular_nova/modules/alerts/sound/security_levels/xen_alarm1_lower.ogg'
 	looping_sound_interval = 4.5 SECONDS
