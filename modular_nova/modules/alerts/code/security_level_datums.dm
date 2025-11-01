@@ -152,7 +152,7 @@
 	name_shortform = "BLK"
 	announcement_color = "pink"
 	number_level = SEC_LEVEL_BLACK
-	status_display_icon_state = "blackalert"
+	status_display_icon_state = "COLOR_SECURITY_RED"
 	fire_alarm_light_color = COLOR_THEME_MIDNIGHT
 	lowering_to_configuration_key = /datum/config_entry/string/alert_black_downto
 	elevating_to_configuration_key = /datum/config_entry/string/alert_black_upto
