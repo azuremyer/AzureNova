@@ -147,8 +147,8 @@
  *
  * MAPU Reactor Meltdown
  */
-/datum/security_level/epsilon
-	name = "Epsilon"
+/datum/security_level/black
+	name = "Black"
 	name_shortform = "BLK"
 	announcement_color = "pink"
 	number_level = SEC_LEVEL_BLACK
