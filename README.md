@@ -1,3 +1,5 @@
+[This repo is currently non-functional until TGStation/NovaSector updates their lists to be associative.](https://github.com/NovaSector/NovaSector/issues/6377)
+
 ## Nova Sector (/tg/station Downstream) - "ExoNova" fork by N0tG00b3r (aka TheActualNikoOneshot)
 
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/N0tG00b3r/ExobytechNova.svg)](http://isitmaintained.com/project/N0tG00b3r/ExobytechNova "Percentage of issues still open")
