@@ -10,11 +10,11 @@
 	abstract_type = /datum/brain_trauma/very_special
 
 /datum/brain_trauma/very_special/bimbo
-	name = "Permanent hormonal disruption"
+	name = "Hormonal disruption"
 	desc = "The patient has completely lost the ability to form speech and seems extremely aroused."
-	scan_desc = "permanent hormonal disruption"
+	scan_desc = "hormonal disruption"
 	gain_text = span_purple("Your thoughts get cloudy, but it turns you on like hell.")
-	lose_text = span_warning("A pleasant coolness spreads throughout your body, You are thinking clearly again.")
+	lose_text = span_warning("A pleasant coolness spreads throughout your body. You are thinking clearly again.")
 	//people need to be able to gain it through the chemical OD
 	can_gain = TRUE
 	//people should not be able to randomly get this trauma
@@ -67,7 +67,7 @@
 		human_owner.adjustStaminaLoss(30)
 		lust_message = "You body feels so very hot, almost unwilling to cooperate..."
 	if(stress >= 300)
-		human_owner.adjustOxyLoss(40)
+		//human_owner.adjustOxyLoss(40)
 		lust_message = "You feel your neck tightening, straining..."
 	to_chat(human_owner, span_purple(lust_message))
 	return TRUE
@@ -173,6 +173,25 @@
 /datum/mood_event/bimbo
 	description = span_purple("So-o... Help..less... Lo-ve it!\n")
 
+/// EXOBYTECHNOVA UPD: A variant of this brain trauma given by the 3D3N retrovirus disease type.
+/datum/brain_trauma/very_special/bimbo/retrovirus
+	scan_desc = "viral-induced hormonal disruption"
+	resilience = TRAUMA_RESILIENCE_ABSOLUTE
+
+/datum/brain_trauma/very_special/bimbo/retrovirus/on_gain()
+	. = ..()
+	owner.add_mood_event("bimbo", /datum/mood_event/bimbo)
+	if(!HAS_TRAIT_FROM(owner, TRAIT_BIMBO, TRAIT_LEWDCHEM_RETROVIRUS))
+		ADD_TRAIT(owner, TRAIT_BIMBO, TRAIT_LEWDCHEM_RETROVIRUS)
+
+/datum/brain_trauma/very_special/bimbo/retrovirus/on_lose()
+	. = ..()
+	owner.clear_mood_event("bimbo")
+	if(HAS_TRAIT_FROM(owner, TRAIT_BIMBO, TRAIT_LEWDCHEM_RETROVIRUS))
+		REMOVE_TRAIT(owner, TRAIT_BIMBO, TRAIT_LEWDCHEM_RETROVIRUS)
+
+/// EXOBYTECHNOVA UPD END
+
 /*
 *	MASOCHISM
 */
@@ -188,7 +207,7 @@
 	mob_trait = TRAIT_MASOCHISM
 	gain_text = span_danger("You have a sudden desire for pain...")
 	lose_text = span_notice("Ouch! Pain is... Painful again! Ou-ou-ouch!")
-	medical_record_text = "Subject has masochism."
+	medical_record_text = "Subject exhibits masochistic tendencies."
 	icon = FA_ICON_HEART_BROKEN
 	erp_quirk = TRUE
 
@@ -238,7 +257,7 @@
 	mob_trait = TRAIT_SADISM
 	gain_text = span_danger("You feel a sudden desire to inflict pain.")
 	lose_text = span_notice("Others' pain doesn't satisfy you anymore.")
-	medical_record_text = "Subject has sadism."
+	medical_record_text = "Subject exhibits sadistic tendencies."
 	icon = FA_ICON_HAMMER
 	erp_quirk = TRUE
 

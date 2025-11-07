@@ -100,28 +100,28 @@ export function PageMain(props) {
 
             <Flex.Item>
               <AlertButton
-                alertLevel="green"
-                onClick={() => setNewAlertLevel('green')}
+                alertLevel="Green"
+                onClick={() => setNewAlertLevel('Green')}
               />
 
               <AlertButton
-                alertLevel="blue"
-                onClick={() => setNewAlertLevel('blue')}
+                alertLevel="Blue"
+                onClick={() => setNewAlertLevel('Blue')}
               />
               {/* NOVA EDIT ADDITION START - Alerts */}
               <AlertButton
-                alertLevel="violet"
-                onClick={() => setNewAlertLevel('violet')}
+                alertLevel="Violet"
+                onClick={() => setNewAlertLevel('Violet')}
               />
 
               <AlertButton
-                alertLevel="orange"
-                onClick={() => setNewAlertLevel('orange')}
+                alertLevel="Orange"
+                onClick={() => setNewAlertLevel('Orange')}
               />
 
               <AlertButton
-                alertLevel="amber"
-                onClick={() => setNewAlertLevel('amber')}
+                alertLevel="Amber"
+                onClick={() => setNewAlertLevel('Amber')}
               />
               {/* NOVA EDIT ADDITION END - Alerts */}
             </Flex.Item>

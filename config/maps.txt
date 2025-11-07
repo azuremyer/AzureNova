@@ -42,7 +42,7 @@ map metastation
 endmap
 
 map tramstation
-	#votable
+	votable
 endmap
 
 map nebulastation
@@ -86,4 +86,9 @@ endmap
 
 map snowglobe
 	votable
+endmap
+
+## EXONOVA MAPS ##
+
+map darkphoenix
 endmap

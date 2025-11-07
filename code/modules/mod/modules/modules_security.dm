@@ -584,7 +584,7 @@
 	name = "superglued MOD bulwark module"
 	desc = "Layers upon layers of shock dampening plates, just to stop you from getting shoved into a wall by an angry mob. Good luck removing this one."
 	removable = FALSE
-	complexity = 0
+	complexity = 1
 
 /obj/item/mod/module/quick_cuff
 	name = "MOD restraint assist module"

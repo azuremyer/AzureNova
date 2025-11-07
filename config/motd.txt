@@ -12,10 +12,10 @@
 </p>
 <p>
 	<em>
-		 This server is running ExobytechNova ver. indev 0.2.1 created by N0tG00b3r, using the work of KevinGlitch as a base. You can report bugs on GitHub
+		This server is running ExobytechNova ver. indev 0.5.5 created by N0tG00b3r, using the work of KevinGlitch as a base. You can report bugs on GitHub
 		<a href="https://github.com/N0tG00b3r/ExobytechNova/issues">
 			 here
 		</a>
-		 . Enjoy your stay.
+		. Enjoy your stay.
 	</em>
 </p>

@@ -5,4 +5,8 @@
 #If SQL-based admin loading is enabled, admins listed here will always be loaded first and will override any duplicate entries in the database.
 
 MunkoMonkey = Host
-azrefrisk = Lazy Master
+azrefrisk = Game Master
+Kevin_Glitch = Game Master
+RealNiko = Game Master
+Wreckerlollol = Game Master
+Nazaki W. = Game Master

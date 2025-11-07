@@ -1,0 +1,40 @@
+"a" = (/turf/closed/wall/mineral/titanium,/area/shuttle/phoenix)
+"b" = (/obj/machinery/door/airlock/shuttle/glass,/turf/open/floor/iron/shuttle/arrivals{icon_state = "sign_2"},/area/shuttle/phoenix)
+"e" = (/obj/structure/window/reinforced/spawner/directional/east,/obj/structure/chair/comfy/shuttle{dir = 8},/turf/open/floor/iron/white/side,/area/shuttle/phoenix)
+"f" = (/turf/closed/wall/r_wall/plastitanium,/area/shuttle/phoenix)
+"g" = (/turf/open/floor/iron/shuttle/arrivals{icon_state = "sign_3"},/area/shuttle/phoenix)
+"i" = (/obj/machinery/computer/shuttle/phoenix/axionlocked{dir = 4},/turf/open/floor/iron/shuttle/arrivals,/area/shuttle/phoenix)
+"j" = (/obj/machinery/door/airlock/shuttle/glass,/obj/docking_port/mobile{dir = 2; port_direction = 2; shuttle_id = "phoenix_arrival_shuttle_station"; name = "station locked axion shuttle"; preferred_direction = 2},/turf/open/floor/iron/shuttle/arrivals{icon_state = "sign_2"; dir = 1},/area/shuttle/phoenix)
+"l" = (/obj/machinery/door/airlock/shuttle/glass,/turf/open/floor/iron/shuttle/arrivals{icon_state = "sign_2"; dir = 1},/area/shuttle/phoenix)
+"m" = (/turf/open/floor/iron/white/side{dir = 1},/area/shuttle/phoenix)
+"n" = (/turf/template_noop,/area/template_noop)
+"r" = (/turf/open/floor/iron/shuttle/arrivals,/area/shuttle/phoenix)
+"s" = (/obj/structure/chair/comfy/shuttle{dir = 8},/turf/open/floor/iron/white/side{dir = 1},/area/shuttle/phoenix)
+"t" = (/turf/open/floor/iron/shuttle/arrivals{icon_state = "sign_1"},/area/shuttle/phoenix)
+"u" = (/turf/open/floor/iron/white/side,/area/shuttle/phoenix)
+"w" = (/obj/structure/chair/comfy/shuttle{dir = 8},/turf/open/floor/iron/shuttle/arrivals,/area/shuttle/phoenix)
+"A" = (/obj/machinery/power/shuttle_engine/heater{dir = 4},/obj/structure/window/reinforced/survival_pod/indestructible/spawner/directional/west,/turf/open/floor/plating/airless,/area/shuttle/phoenix)
+"B" = (/obj/machinery/power/shuttle_engine/propulsion{dir = 4},/turf/open/floor/plating/airless,/area/shuttle/phoenix)
+"D" = (/turf/open/floor/iron,/area/shuttle/phoenix)
+"E" = (/turf/closed/wall/mineral/titanium/interior,/area/shuttle/phoenix)
+"F" = (/obj/structure/window/reinforced/spawner/directional/east,/obj/structure/chair/comfy/shuttle{dir = 8},/turf/open/floor/iron/white/side{dir = 1},/area/shuttle/phoenix)
+"G" = (/obj/structure/window/reinforced/spawner/directional/west,/turf/open/floor/iron/white/side,/area/shuttle/phoenix)
+"H" = (/obj/structure/window/reinforced/spawner/directional/east,/obj/structure/chair/comfy/shuttle{dir = 8},/turf/open/floor/iron,/area/shuttle/phoenix)
+"I" = (/obj/structure/chair/comfy/shuttle{dir = 8},/turf/open/floor/iron,/area/shuttle/phoenix)
+"J" = (/turf/closed/wall/mineral/titanium/nodiagonal,/area/shuttle/phoenix)
+"L" = (/obj/structure/chair/comfy/shuttle{dir = 8},/turf/open/floor/iron/white/side,/area/shuttle/phoenix)
+"M" = (/obj/structure/window/reinforced/spawner/directional/west,/turf/open/floor/iron,/area/shuttle/phoenix)
+"O" = (/turf/open/floor/iron/white,/area/shuttle/phoenix)
+"P" = (/obj/effect/spawner/structure/window/reinforced/shuttle/indestructible,/turf/open/floor/iron/large,/area/shuttle/phoenix)
+"T" = (/turf/closed/wall/r_wall/plastitanium/nodiagonal,/area/shuttle/phoenix)
+"Z" = (/obj/structure/window/reinforced/spawner/directional/west,/turf/open/floor/iron/white/side{dir = 1},/area/shuttle/phoenix)
+
+(1,1,1) = {"
+naJJlJPPPPJjJJfn
+aJEgtMIDIDHtgETT
+PrrrrGLuLuerrrAB
+PiwrrOOOOOOrrrAB
+PrrrrZsmsmFrrrAB
+aJEgtMIDIDHtgETT
+naJJbJPPPPJbJJfn
+"}

@@ -178,6 +178,32 @@
 /obj/machinery/suit_storage_unit/industrial/loader
 	mod_type = /obj/item/mod/control/pre_equipped/loader
 
+// EXOBYTECHNOVA UPD: Phoenix Collective MOD suit storage units
+/obj/machinery/suit_storage_unit/phoenix
+	storage_type = /obj/item/tank/internals/oxygen
+	mod_type = /obj/item/mod/control/pre_equipped/phoenix
+
+/obj/machinery/suit_storage_unit/phoenix
+	storage_type = /obj/item/tank/internals/oxygen
+	mod_type = /obj/item/mod/control/pre_equipped/phoenix
+
+/obj/machinery/suit_storage_unit/phoenix/engineer
+	mod_type = /obj/item/mod/control/pre_equipped/phoenix/engineer
+
+/obj/machinery/suit_storage_unit/phoenix/medical
+	mod_type = /obj/item/mod/control/pre_equipped/phoenix/medical
+
+/obj/machinery/suit_storage_unit/phoenix/medical/surgical
+	mod_type = /obj/item/mod/control/pre_equipped/phoenix/medical/surgical
+
+/obj/machinery/suit_storage_unit/phoenix/security
+	mod_type = /obj/item/mod/control/pre_equipped/phoenix/security
+
+/obj/machinery/suit_storage_unit/phoenix/command
+	mod_type = /obj/item/mod/control/pre_equipped/phoenix/command
+
+// EXOBYTECHNOVA UPDATE END
+
 /obj/machinery/suit_storage_unit/Initialize(mapload)
 	. = ..()
 

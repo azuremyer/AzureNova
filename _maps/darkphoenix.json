@@ -1,0 +1,37 @@
+{
+	"version": 1,
+	"map_name": "Dark Phoenix",
+	"map_path": "map_files/DarkPhoenix",
+	"map_file": "DarkPhoenix.dmm",
+	"shuttles": {
+		"cargo": "cargo_nova",
+		"ferry": "ferry_nova",
+		"whiteship": "whiteship_meta",
+		"emergency": "emergency_nova"
+	},
+	"traits": [
+		{
+			"Linkage": "Cross",
+			"Baseturf": "/turf/open/openspace/airless",
+			"No Parallax": true,
+			"Up": false,
+			"Down": false
+		},
+		{
+			"Linkage": "Cross",
+			"Baseturf": "/turf/open/openspace/airless",
+			"Gravity": true,
+			"No Parallax": true,
+			"Up": false,
+			"Down": false
+		}
+	],
+	"job_changes": {
+		"Cook": {
+			"additional_cqc_areas": [
+				"/area/station/service/bar",
+				"/area/station/commons/lounge"
+			]
+		}
+	}
+}

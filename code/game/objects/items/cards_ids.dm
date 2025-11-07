@@ -1466,6 +1466,27 @@
 
 	return ..()
 
+/// EXOBYTECHNOVA UPD: PHOENIX COLLECTIVE CENTCOM/ERT ID CARDS
+/obj/item/card/id/advanced/black/phoenix
+	name = "phoenix collective ID card"
+	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors."
+	trim = /datum/id_trim/phoenixcollective
+	wildcard_slots = WILDCARD_LIMIT_PLATINUM
+
+/obj/item/card/id/advanced/black/phoenix/ert
+	name = "phoenix collective military ID"
+	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors."
+	trim = /datum/id_trim/phoenixcollective/ert
+	wildcard_slots = WILDCARD_LIMIT_PLATINUM
+
+/obj/item/card/id/advanced/black/phoenix/centcom
+	name = "phoenix collective centcom ID"
+	desc = "An ID card issued by the Phoenix Collective, because for some reason the rest of the galaxy hasn't bothered putting DNA locks on doors."
+	trim = /datum/id_trim/phoenixcollective/official
+	wildcard_slots = WILDCARD_LIMIT_PLATINUM
+
+/// EXOBYTECHNOVA UPD END
+
 /obj/item/card/id/advanced/debug
 	name = "\improper Debug ID"
 	desc = "A debug ID card. Has ALL the all access and a boatload of money, you really shouldn't have this."

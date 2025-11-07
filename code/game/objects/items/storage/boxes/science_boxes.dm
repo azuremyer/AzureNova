@@ -138,3 +138,17 @@
 		/obj/item/slimecross/stabilized/yellow=1,
 		)
 	generate_items_inside(items_inside,src)
+
+/// EXOBYTECHNOVA UPD: Regen core and anomaly neutralizers/cores boxes
+/obj/item/storage/box/regencore
+	name = "box of regenerative cores"
+	desc = "A box made to contain regenerative cores, for people who do too much Xenoarcheology."
+	icon_state = "hugbox"
+	illustration = "regen_core"
+
+/obj/item/storage/box/anomalyneut
+	name = "box of anomaly neutralizers"
+	desc = "Contains anomaly neutralizers, for neutralizing anomalies... duh."
+	icon_state = "hugbox"
+	illustration = "anomaly_neut"
+/// EXOBYTECHNOVA UPD END

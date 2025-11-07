@@ -72,6 +72,19 @@
 	max_combined_w_class = 30
 	max_items = 21
 
+/// EXOBYTECHNOVA UPD: Phoenix Collective version of the Bluespace storage
+/obj/item/mod/module/storage/phoenix
+	name = "MOD phoenix storage module"
+	desc = "Following the destruction of the Hyperverse Gate, the Phoenix Collective could no longer sustainably mount Bluespace storage technology within \
+		every single MOD control unit they manufactured. This alternative model is based off - you guessed it - modified Syndicate tech, making use of \
+		cheaper, but still effective, esoteric technologies to maintain the effectiveness of their storage. While unable to hold as much as a Bluespace-based \
+		storage module, it is still an effective alternative with decent storage capacity."
+	icon_state = "storage_large"
+	max_w_class = WEIGHT_CLASS_BULKY
+	max_combined_w_class = 60
+	max_items = 14
+	big_nesting = TRUE
+
 /obj/item/mod/module/storage/belt
 	name = "MOD case storage module"
 	desc = "Some concessions had to be made when creating a compressed modular suit core. \
@@ -86,7 +99,7 @@
 
 /obj/item/mod/module/storage/bluespace
 	name = "MOD bluespace storage module"
-	desc = "A storage system developed by Nanotrasen, these compartments employ \
+	desc = "A storage system developed by NanoTrasen, these compartments employ \
 		miniaturized bluespace pockets for the ultimate in storage technology; regardless of the weight of objects put inside."
 	icon_state = "storage_large"
 	max_w_class = WEIGHT_CLASS_GIGANTIC
@@ -332,7 +345,7 @@
 		lets pepper spray pass through and it will do nothing to improve the taste of a goliath steak."
 	icon_state = "apparatus"
 	complexity = 1
-	incompatible_modules = list(/obj/item/mod/module/mouthhole)
+	incompatible_modules = list(/obj/item/mod/module/mouthhole, /obj/item/mod/module/thermal_regulator)
 	required_slots = list(ITEM_SLOT_HEAD|ITEM_SLOT_MASK)
 	/// Former flags of the helmet.
 	var/former_helmet_flags = NONE
@@ -577,7 +590,7 @@
 	module_type = MODULE_TOGGLE
 	complexity = 1
 	active_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
-	incompatible_modules = list(/obj/item/mod/module/thermal_regulator)
+	incompatible_modules = list(/obj/item/mod/module/thermal_regulator, /obj/item/mod/module/mouthhole)
 	required_slots = list(ITEM_SLOT_BACK|ITEM_SLOT_BELT)
 	/// The temperature we are regulating to.
 	var/temperature_setting = BODYTEMP_NORMAL
@@ -603,7 +616,7 @@
 	name = "MOD DNA lock module"
 	desc = "A module which engages with the various locks and seals tied to the suit's systems, \
 		enabling it to only be worn by someone corresponding with the user's exact DNA profile; \
-		however, this incredibly sensitive module is shorted out by EMPs. Luckily, cloning has been outlawed."
+		however, this incredibly sensitive module is shorted out by EMPs."
 	icon_state = "dnalock"
 	module_type = MODULE_USABLE
 	complexity = 1
@@ -1043,11 +1056,17 @@
 
 /obj/item/mod/module/hearing_protection
 	name = "MOD hearing protection module"
-	desc = "A module that protects the users ears from loud sounds"
+	desc = "A module that protects the user's ears from loud sounds."
+	complexity = 1
+	incompatible_modules = list(/obj/item/mod/module/hearing_protection, /obj/item/mod/module/hearing_protection/elite)
+	required_slots = list(ITEM_SLOT_HEAD)
+
+/obj/item/mod/module/hearing_protection/elite
+	name = "MOD elite hearing protection module"
+	desc = "A compact module that protects the user's ears from loud sounds."
 	complexity = 0
 	removable = FALSE
-	incompatible_modules = list(/obj/item/mod/module/hearing_protection)
-	required_slots = list(ITEM_SLOT_HEAD)
+	incompatible_modules = list(/obj/item/mod/module/hearing_protection, /obj/item/mod/module/hearing_protection/elite)
 
 /obj/item/mod/module/hearing_protection/on_part_activation()
 	var/obj/item/clothing/head_cover = mod.get_part_from_slot(ITEM_SLOT_HEAD) || mod.get_part_from_slot(ITEM_SLOT_MASK) || mod.get_part_from_slot(ITEM_SLOT_EYES)

@@ -1,9 +1,9 @@
-## Nova Sector (/tg/station Downstream)
+[This repo is currently non-functional until TGStation/NovaSector updates their lists to be associative.](https://github.com/NovaSector/NovaSector/issues/6377)
 
-[![CI Suite](https://github.com/NovaSector/NovaSector/workflows/CI%20Suite/badge.svg)](https://github.com/NovaSector/NovaSector/actions?query=workflow%3A%22CI+Suite%22)
-[![Percentage of issues still open](https://isitmaintained.com/badge/open/NovaSector/NovaSector.svg)](https://isitmaintained.com/project/NovaSector/NovaSector "Percentage of issues still open")
-[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/NovaSector/NovaSector.svg)](https://isitmaintained.com/project/NovaSector/NovaSector "Average time to resolve an issue")
-![Coverage](https://img.shields.io/codecov/c/github/NovaSector/NovaSector)
+## Nova Sector (/tg/station Downstream) - "ExoNova" fork by N0tG00b3r (aka TheActualNikoOneshot)
+
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/N0tG00b3r/ExobytechNova.svg)](http://isitmaintained.com/project/N0tG00b3r/ExobytechNova "Percentage of issues still open")
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/N0tG00b3r/ExobytechNova.svg)](http://isitmaintained.com/project/N0tG00b3r/ExobytechNova "Average time to resolve an issue")
 
 [![resentment](.github/images/badges/built-with-resentment.svg)](.github/images/comics/131-bug-free.png) [![technical debt](.github/images/badges/contains-technical-debt.svg)](.github/images/comics/106-tech-debt-modified.png) [![forinfinityandbyond](.github/images/badges/made-in-byond.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
@@ -18,49 +18,19 @@
 | Nova Sector's Discord   | [https://discord.gg/novasector](https://discord.gg/novasector)                                                                         |
 | Coderbus Discord        | [https://discord.gg/Vh8TJp9](https://discord.gg/Vh8TJp9)                                                                               |
 
-This is Nova Sector's downstream fork of /tg/station created in byond.
+**This repository contains sexually explicit content and is not suitable for those under the age of 18.**
 
-**Please note that this repository contains sexually explicit content and is not suitable for those under the age of 18.**
+*Space Station 13 is a paranoia-laden round-based roleplaying game set against the backdrop of a nonsensical, metal death trap masquerading as a space station, with charming spritework designed to represent the sci-fi setting and its dangerous undertones. Have fun, and survive!*
 
-Space Station 13 is a paranoia-laden round-based roleplaying game set against the backdrop of a nonsensical, metal death trap masquerading as a space station, with charming spritework designed to represent the sci-fi setting and its dangerous undertones. Have fun, and survive!
+## FOR MORE INFORMATION ON THIS REPO:
 
-## Important note - TEST YOUR PULL REQUESTS
+- https://github.com/NovaSector/NovaSector
+- https://github.com/KevinGlitch/NovaSector
 
-You are responsible for the testing of your content and providing proof of such in your pull request. You should not mark a pull request ready for review until you have actually tested it. If you require a separate client for testing, you can use a guest account by logging out of BYOND and connecting to your test server. Test merges are not for bug finding, they are for stress tests where local testing simply doesn't allow for this.
+ExoNova is a "fork of a fork" of Nova Sector and does not keep up with the main branch every time it updates.
+Changes made to ExoNova include nitpicky bug fixes, new NPCs, significantly altered lore texts, and other various changes.
 
-## DEVELOPMENT FLOWCHART
-
-![image](https://i.imgur.com/aJnE4WT.png)
-
-[Modularisation Guide](./modular_nova/readme.md)
-
-## DOWNLOADING
-
-[Downloading](.github/guides/DOWNLOADING.md)
-
-[Running on the server](.github/guides/RUNNING_A_SERVER.md)
-
-[Maps and Away Missions](.github/guides/MAPS_AND_AWAY_MISSIONS.md)
-
-## Compilation
-
-Find `BUILD.bat` here in the root folder of tgstation, and double click it to initiate the build. It consists of multiple steps and might take around 1-5 minutes to compile.
-
-**The long way**. Find `bin/build.cmd` in this folder, and double click it to initiate the build. It consists of multiple steps and might take around 1-5 minutes to compile. If it closes, it means it has finished its job. You can then [setup the server](.github/guides/RUNNING_A_SERVER.md) normally by opening `tgstation.dmb` in DreamDaemon.
-
-**Building tgstation in DreamMaker directly is deprecated and might produce errors**, such as `'tgui.bundle.js': cannot find file`.
-
-**[How to compile in VSCode and other build options](tools/build/README.md).**
-
-## Getting started
-
-For contribution guidelines refer to the [Guides for Contributors](.github/CONTRIBUTING.md).
-
-For getting started (dev env, compilation) see the HackMD document [here](https://hackmd.io/@tgstation/HJ8OdjNBc#tgstation-Development-Guide).
-
-For overall design documentation see [HackMD](https://hackmd.io/@tgstation).
-
-For lore, [see Common Core](https://github.com/tgstation/common_core).
+I would strongly suggest contributing to the original NovaSector repo instead of this one.
 
 ## LICENSE
 

@@ -25,7 +25,7 @@ PLAYER_SOFT_CAP 0
 ## The non-IC name we send to OOC and adminsay.
 #CROSS_SERVER_NAME
 
-
+## NovaSector alert level messages configuration
 ALERT_AMBER_UPTO A major security emergency has developed. Security staff may have weapons unholstered at all times. Random searches are allowed and advised.
 ALERT_AMBER_DOWNTO A major security emergency is still underway. Non-security personnel are required to obey all relevant instructions from security staff.
 ALERT_ORANGE_UPTO A major engineering emergency has developed. Non-engineering personnel are required to evacuate any affected areas and obey relevant instructions from engineering staff. Engineering staff will have expanded access to areas of the station during the emergency.
@@ -40,6 +40,10 @@ ALERT_EPSILON_UPTO Exobytech Central Command has declared the station under full
 ALERT_EPSILON_DOWNTO The Galactic Security Committee has released Military Command and action over the station. Central Command is now in full command authority of the station, comply with all instructions from Exobytech Central Command staff. Crew cooperation is compulsory! Have a Secure Day!
 ALERT_FEDERAL The Galactic Security Committee has placed this galactic sector under its full command. All star systems within this sector are now under Military Law. Comply with all official Galactic Security Committee instructions.
 
+## ExobytechNova alert level messages configuration
+ALERT_BLACK_UPTO The station's primary power source has entered a critical state. As a result, the destruction of the station is imminent or already in progress. All crew are instructed to follow standard evacuation procedures and must obey all instructions given by heads of staff. Any violation of these orders can be punished by death. Crew cooperation is compulsory.
+ALERT_BLACK_DOWNTO Destruction of the station is still imminent due to the station's primary power source being in a critical state. All crew are instructed to follow standard evacuation procedures and must obey all instructions given by heads of staff. Any violation of these orders can be punished by death. Crew cooperation is compulsory.
+
 ## How long until someone can be put in cryo if they are SSD
 CRYO_MIN_SSD_TIME 15
 
@@ -47,17 +51,17 @@ CRYO_MIN_SSD_TIME 15
 #LOG_SUBTLER
 
 ## Enables autotransfer system
-#AUTOTRANSFER
+AUTOTRANSFER
 
 ## Enables starting transfer votes by the crew at large.
 #ALLOW_VOTE_TRANSFER
 
-## autovote initial delay (deciseconds in real time) before first automatic transfer vote call (default 120 minutes)
+## autovote initial delay (deciseconds in real time) before first automatic transfer vote call (default 120 minutes) (now 240)
 ## Set to 0 to disable the subsystem altogether.
-VOTE_AUTOTRANSFER_INITIAL 72000
+VOTE_AUTOTRANSFER_INITIAL 144000
 
-## autovote delay (deciseconds in real time) before sequential automatic transfer votes are called (default 30 minutes)
-VOTE_AUTOTRANSFER_INTERVAL 18000
+## autovote delay (deciseconds in real time) before sequential automatic transfer votes are called (default 30 minutes) (now 120)
+VOTE_AUTOTRANSFER_INTERVAL 72000
 
 ## autovote maximum votes until automatic transfer call. (default 4)
 ## Set to 0 to force automatic crew transfer after the 'vote_autotransfer_initial' elapsed.
@@ -113,7 +117,7 @@ EVENT_FREQUENCY_UPPER 8400
 EVENT_FREQUENCY_LOWER 4200
 
 ## Ticket ping frequency. Set 0 for disable that subsystem. 3000 - 5 minutes, 600 - 1 minute.
-TICKET_PING_FREQUENCY 0
+TICKET_PING_FREQUENCY 3000
 
 ## Minimum alert level for pods to actually evacuate people
 MINIMUM_ALERT_FOR_PODS 0
@@ -142,7 +146,7 @@ SIZE_COLLAR_MAXIMUM 400
 SIZE_COLLAR_MINIMUM 15
 
 ## Uncomment to enable minimum flavor text requirements for joining the round
-#MIN_FLAVOR_TEXT
+# MIN_FLAVOR_TEXT
 
 ## Minimum flavor text number needed to enter the game
 ## YOU MUST HAVE MIN_FLAVOR_TEXT ENABLED FOR THIS TO WORK.

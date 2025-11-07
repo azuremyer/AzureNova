@@ -1,0 +1,999 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"af" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"aZ" = (
+/turf/closed/wall/mineral/plastitanium,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"bh" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"bj" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"by" = (
+/obj/structure/cable,
+/obj/machinery/door/airlock/highsecurity{
+	name = "Right Engine Maintenance"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/admin/general,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/unres{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/firedoor/solid,
+/turf/open/floor/pod,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"bE" = (
+/obj/structure/fluff/shower_drain,
+/obj/machinery/shower/infinite/directional/south,
+/obj/structure/window/spawner/directional/east,
+/obj/machinery/door/window/left/directional/south{
+	name = "Shower"
+	},
+/obj/structure/curtain/cloth,
+/obj/effect/spawner/random/trash/soap,
+/turf/open/floor/noslip,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"bM" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"bR" = (
+/obj/machinery/computer/camera_advanced{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"ce" = (
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable,
+/obj/machinery/cell_charger_multi/wall_mounted/directional/east,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/effect/mapping_helpers/apc/full_charge,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"cg" = (
+/obj/machinery/ore_silo,
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"ci" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"cl" = (
+/turf/closed/wall/mineral/plastitanium/nodiagonal,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"cL" = (
+/obj/machinery/power/shuttle_engine/propulsion/right{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"cM" = (
+/turf/template_noop,
+/area/template_noop)
+"cV" = (
+/obj/machinery/power/shuttle_engine/heater{
+	dir = 1
+	},
+/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"cY" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"dc" = (
+/obj/effect/mapping_helpers/airalarm/all_access,
+/obj/machinery/sleeper/self_control,
+/obj/machinery/light/blacklight/directional/north,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"df" = (
+/obj/machinery/suit_storage_unit/phoenix/command{
+	name = "phoenix command suit storage"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"dq" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"dx" = (
+/obj/effect/spawner/structure/window/reinforced/shuttle,
+/obj/machinery/door/poddoor{
+	id = "wsp_windows";
+	name = "Window Blast Shutters"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"dy" = (
+/obj/structure/closet/secure_closet{
+	icon_state = "hos";
+	name = "Crew Locker";
+	req_access = list("cent_general")
+	},
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/ammo_box/magazine/pulse/extended,
+/obj/item/ammo_box/magazine/pulse/extended,
+/obj/item/ammo_box/magazine/pulse/extended,
+/obj/item/ammo_box/magazine/pulse/extended,
+/obj/item/melee/energy/sword/saber/red,
+/obj/item/storage/backpack/holding,
+/obj/item/storage/box/flashbangs,
+/obj/item/storage/toolbox/guncase/nova/pistol/opfor/plasma_marksman,
+/obj/item/gun/ballistic/automatic/pulse_rifle/phoenix,
+/obj/item/grenade/c4/x4,
+/obj/machinery/firealarm/directional/east,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"dU" = (
+/obj/machinery/airalarm/directional/west{
+	pixel_y = 6
+	},
+/obj/machinery/light_switch/directional/west{
+	pixel_x = -22;
+	pixel_y = -8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"eo" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"gG" = (
+/obj/machinery/light_switch/directional/west{
+	pixel_x = -24
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/obj/machinery/health_station/directional/south,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"it" = (
+/obj/machinery/light/blacklight/directional/south,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"ix" = (
+/obj/machinery/button/door{
+	id = "wsp_dormbolts";
+	name = "Privacy Lock";
+	normaldoorcontrol = 1;
+	pixel_x = 24;
+	specialfunctions = 4
+	},
+/obj/machinery/sleeper/self_control,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"nj" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible/layer4{
+	dir = 8;
+	name = "atmos input tank connector"
+	},
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"nI" = (
+/obj/effect/mapping_helpers/airalarm/all_access,
+/obj/machinery/light_switch/directional/north{
+	pixel_y = 23;
+	pixel_x = 10
+	},
+/obj/machinery/airalarm/directional/north{
+	pixel_x = -6
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"nM" = (
+/obj/structure/tank_dispenser/oxygen,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"nV" = (
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/effect/mapping_helpers/apc/full_charge,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"oE" = (
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"oI" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"pS" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/airlock/shuttle{
+	name = "Shuttle Dorm";
+	id_tag = "wsp_dormbolts"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/admin/living,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/machinery/door/firedoor/solid,
+/turf/open/floor/pod,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"qs" = (
+/obj/machinery/light/blacklight/directional/east,
+/obj/machinery/button/door{
+	id = "wsp_windows";
+	name = "Windows Blast Door Control";
+	pixel_x = 24
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/recharger{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/obj/machinery/recharger{
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"qQ" = (
+/obj/machinery/computer/operating{
+	dir = 8
+	},
+/obj/machinery/light/blacklight/directional/east,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"rv" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/toolbox/mechanical{
+	pixel_y = 10
+	},
+/obj/item/storage/toolbox/electrical{
+	pixel_y = 2
+	},
+/obj/item/stock_parts/power_store/cell/infinite/nif_cell{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"rA" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"rT" = (
+/obj/machinery/suit_storage_unit/phoenix/medical{
+	name = "phoenix medical suit storage"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"tr" = (
+/obj/structure/closet/secure_closet{
+	icon_state = "med_secure";
+	name = "Medicine Locker";
+	req_access = list("cent_general");
+	desc = "Filled to the brim with medical junk."
+	},
+/obj/item/storage/medkit/frontier/phoenix/oxygen/stocked{
+	pixel_x = 5
+	},
+/obj/item/storage/medkit/frontier/phoenix/oxygen/stocked{
+	pixel_x = 5
+	},
+/obj/item/storage/medkit/frontier/phoenix/toxin/stocked,
+/obj/item/storage/medkit/frontier/phoenix/toxin/stocked,
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = -5
+	},
+/obj/item/storage/medkit/frontier/phoenix/stocked{
+	pixel_x = -5
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"tL" = (
+/obj/machinery/rnd/production/protolathe/offstation{
+	drop_direction = 1
+	},
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"uj" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"vC" = (
+/obj/machinery/space_heater,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"vX" = (
+/obj/structure/cable,
+/obj/machinery/power/smes/magical/cybersun,
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"wp" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/machinery/airalarm/directional/west{
+	pixel_y = 6
+	},
+/obj/effect/mapping_helpers/airalarm/all_access,
+/obj/effect/mapping_helpers/airalarm/surgery,
+/obj/machinery/firealarm/directional/west{
+	pixel_y = -7
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"yd" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/airlock/highsecurity{
+	name = "Shuttle Bridge Access"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/admin/general,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/firedoor/solid,
+/turf/open/floor/pod,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"yT" = (
+/obj/structure/table/optable,
+/obj/machinery/defibrillator_mount/charging{
+	pixel_y = -28
+	},
+/obj/item/defibrillator/loaded,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"Az" = (
+/obj/machinery/light_switch/directional/north{
+	pixel_y = 23;
+	pixel_x = 10
+	},
+/obj/machinery/airalarm/directional/north{
+	pixel_x = -6
+	},
+/obj/effect/mapping_helpers/airalarm/all_access,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"BA" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/machinery/door/airlock/highsecurity{
+	name = "Shuttle Bridge"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/admin/captain,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/door/firedoor/solid,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"BI" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"DJ" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"DT" = (
+/obj/machinery/computer/camera_advanced/shuttle_docker/whiteship{
+	dir = 1;
+	x_offset = 0;
+	y_offset = -5
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"Fo" = (
+/obj/structure/chair/comfy/shuttle,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"FE" = (
+/obj/machinery/power/shuttle_engine/propulsion/left{
+	dir = 1
+	},
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"GF" = (
+/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/machinery/atmospherics/components/unary/passive_vent/layer2{
+	dir = 4;
+	name = "passive waste vent"
+	},
+/turf/open/floor/plating/reinforced/airless,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"GO" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"HB" = (
+/obj/structure/closet/secure_closet/medical2/unlocked{
+	desc = "Used to knock people out. Usually for surgery.";
+	req_access = list("cent_general")
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"Ia" = (
+/obj/machinery/light/blacklight/directional/west,
+/obj/machinery/sleeper/self_control{
+	dir = 4
+	},
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"IE" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"Jv" = (
+/obj/structure/closet/secure_closet{
+	icon_state = "hos";
+	name = "Crew Locker";
+	req_access = list("cent_general")
+	},
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/ammo_box/magazine/pulse/extended,
+/obj/item/ammo_box/magazine/pulse/extended,
+/obj/item/ammo_box/magazine/pulse/extended,
+/obj/item/ammo_box/magazine/pulse/extended,
+/obj/item/melee/energy/sword/saber/red,
+/obj/item/storage/backpack/holding,
+/obj/item/storage/box/flashbangs,
+/obj/item/storage/toolbox/guncase/nova/pistol/opfor/plasma_marksman,
+/obj/item/gun/ballistic/automatic/pulse_rifle/phoenix,
+/obj/item/grenade/c4/x4,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"Jy" = (
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/effect/mapping_helpers/apc/cut_AI_wire,
+/obj/effect/mapping_helpers/apc/full_charge,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"JD" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/docking_port/mobile{
+	callTime = 250;
+	can_move_docking_ports = 1;
+	dir = 2;
+	shuttle_id = "whiteship";
+	launch_status = 0;
+	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
+	name = "White Ship";
+	port_direction = 2;
+	preferred_direction = 2
+	},
+/obj/machinery/door/airlock/external{
+	id_tag = "wsp_exitbolts"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/admin/general,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"KM" = (
+/obj/structure/cable,
+/obj/machinery/button/door/directional/north{
+	normaldoorcontrol = 1;
+	specialfunctions = 4;
+	id = s;
+	name = "Exterior Bolt Control";
+	pixel_x = -5
+	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/light_switch/directional/north{
+	pixel_y = 23;
+	pixel_x = 5
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"KN" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 8
+	},
+/obj/machinery/light/blacklight/directional/south,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"Ln" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/airlock/shuttle{
+	name = "Shuttle Storage"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/admin/storage,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/machinery/door/firedoor/solid,
+/turf/open/floor/pod,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"Lz" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/door/airlock/highsecurity{
+	name = "Left Engine Maintenance"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/admin/general,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/effect/mapping_helpers/airlock/unres{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/solid,
+/turf/open/floor/pod,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"Nh" = (
+/obj/machinery/light/small/directional/west,
+/obj/structure/closet/firecloset/full,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"OP" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"PC" = (
+/obj/machinery/atmospherics/components/tank/air/layer4{
+	dir = 1
+	},
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"QZ" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/effect/mapping_helpers/airlock/cutaiwire,
+/obj/machinery/door/airlock/external{
+	id_tag = "wsp_exitbolts"
+	},
+/obj/effect/mapping_helpers/airlock/access/all/admin/general,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"Ru" = (
+/obj/item/storage/bag/sheetsnatcher/debug{
+	pixel_x = -6;
+	pixel_y = 2
+	},
+/obj/item/multitool{
+	pixel_y = -5;
+	pixel_x = 7
+	},
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"Sk" = (
+/obj/machinery/computer/shuttle/white_ship/bridge{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/abandoned/bridge{
+	name = "Phoenix Shuttle Bridge"
+	})
+"Tj" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"UO" = (
+/obj/effect/spawner/surgery_tray/full/deployed,
+/obj/machinery/airalarm/directional/east{
+	pixel_y = 6
+	},
+/obj/effect/mapping_helpers/airalarm/all_access,
+/obj/machinery/light_switch/directional/east{
+	pixel_x = 22;
+	pixel_y = -8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+"WL" = (
+/obj/machinery/power/terminal{
+	dir = 4
+	},
+/obj/machinery/rnd/production/circuit_imprinter/offstation{
+	drop_direction = 1
+	},
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"Xi" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible/layer4,
+/turf/open/floor/plating/reinforced,
+/area/shuttle/abandoned/engine{
+	name = "Phoenix Shuttle Engine"
+	})
+"ZT" = (
+/obj/machinery/light/blacklight/directional/north,
+/obj/machinery/suit_storage_unit/phoenix/engineer{
+	name = "phoenix engineer suit storage"
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/abandoned/crew{
+	name = "Phoenix Shuttle Crew Quarters"
+	})
+
+(1,1,1) = {"
+cM
+cl
+cl
+GF
+ci
+ci
+BI
+BI
+BI
+eo
+cM
+cM
+cM
+cM
+cM
+"}
+(2,1,1) = {"
+cM
+FE
+bM
+vC
+tL
+ci
+bE
+dU
+Jv
+BI
+cM
+cM
+cM
+cM
+cM
+"}
+(3,1,1) = {"
+cM
+FE
+bM
+Tj
+WL
+ci
+dc
+IE
+Jv
+BI
+cM
+cM
+cM
+cM
+cM
+"}
+(4,1,1) = {"
+cM
+FE
+bM
+uj
+vX
+ci
+ix
+DJ
+dy
+BI
+cM
+cM
+cM
+cM
+cM
+"}
+(5,1,1) = {"
+aZ
+cl
+cl
+by
+ci
+ci
+ci
+pS
+BI
+BI
+oI
+oI
+dx
+dx
+rA
+"}
+(6,1,1) = {"
+cl
+Nh
+cl
+KM
+wp
+gG
+ci
+Az
+it
+BI
+nI
+Ia
+Fo
+DT
+dx
+"}
+(7,1,1) = {"
+JD
+cY
+QZ
+GO
+GO
+GO
+yd
+af
+bj
+BA
+dq
+OP
+Fo
+bR
+dx
+"}
+(8,1,1) = {"
+cl
+nM
+cl
+nV
+qQ
+yT
+ci
+Jy
+KN
+BI
+ce
+qs
+Fo
+Sk
+dx
+"}
+(9,1,1) = {"
+aZ
+cl
+cl
+Lz
+ci
+ci
+ci
+Ln
+BI
+BI
+oI
+oI
+dx
+dx
+rA
+"}
+(10,1,1) = {"
+cM
+cL
+cV
+Xi
+PC
+ci
+df
+DJ
+rv
+BI
+cM
+cM
+cM
+cM
+cM
+"}
+(11,1,1) = {"
+cM
+cL
+cV
+oE
+nj
+ci
+ZT
+bh
+tr
+BI
+cM
+cM
+cM
+cM
+cM
+"}
+(12,1,1) = {"
+cM
+FE
+bM
+Ru
+cg
+ci
+rT
+UO
+HB
+BI
+cM
+cM
+cM
+cM
+cM
+"}
+(13,1,1) = {"
+cM
+cl
+cl
+ci
+ci
+ci
+BI
+BI
+BI
+eo
+cM
+cM
+cM
+cM
+cM
+"}

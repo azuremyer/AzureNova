@@ -9,7 +9,7 @@
 	minimum_survivable_temperature = 0
 	var/projectile_deflect_chance = 0
 
-/mob/living/basic/trooper/syndicate/melee/bullet_act(obj/projectile/projectile)
+/mob/living/basic/trooper/marcultist/melee/bullet_act(obj/projectile/projectile)
 	if(prob(projectile_deflect_chance))
 		visible_message(span_danger("[src] blocks [projectile] with its shield!"))
 		return BULLET_ACT_BLOCK
@@ -51,31 +51,29 @@
 /// Actually interesting ranged enemies
 /mob/living/basic/trooper/marcultist/ranged/plaspistol
 	casingtype = null
-	projectiletype = /obj/projectile/beam/laser/plasma_glob/pulse
+	projectiletype = /obj/item/ammo_casing/energy/laser/plasma_glob
 	projectilesound = 'modular_nova/modules/modular_weapons/sounds/laser_firing/incinerate.ogg'
-	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged/burst
-	burst_shots = 3
 	ranged_cooldown = 3 SECONDS
 	r_hand = /obj/item/gun/ballistic/automatic/pistol/plasma_thrower
-	maxHealth = 150
-	health = 150
+	maxHealth = 100
+	health = 100
 
 /mob/living/basic/trooper/marcultist/ranged/pulserifle
 	casingtype = null
-	projectiletype = /obj/projectile/beam/pulse
+	projectiletype = /obj/projectile/beam/laser/plasma_glob/pulse
 	projectilesound = 'modular_nova/modules/modular_weapons/sounds/pulse_shoot.ogg'
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged/burst
 	burst_shots = 3
-	ranged_cooldown = 2 SECONDS
+	ranged_cooldown = 3 SECONDS
 	r_hand = /obj/item/gun/ballistic/automatic/pulse_rifle
-	maxHealth = 175
-	health = 175
+	maxHealth = 110
+	health = 110
 
 /mob/living/basic/trooper/marcultist/ranged/pulsesniper
 	casingtype = null
-	projectiletype = /obj/projectile/beam/pulse/heavy
+	projectiletype = /obj/projectile/beam/laser/plasma_glob/pulse
 	projectilesound = 'modular_nova/modules/modular_weapons/sounds/pulse_shoot.ogg'
-	ranged_cooldown = 4 SECONDS
+	ranged_cooldown = 5 SECONDS
 	r_hand = /obj/item/gun/ballistic/rifle/pulse_sniper
-	maxHealth = 140
-	health = 140
+	maxHealth = 95
+	health = 95
